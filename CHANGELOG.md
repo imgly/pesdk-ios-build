@@ -1,3 +1,25 @@
+# 6.4.0
+
+## Added
+
+* Added a `discardConfirmationClosure` property to `PhotoEditViewControllerOptions` that is called when tapping the cancel button while changes are applied to the image.
+* Zooming is now enabled in all tools except for the focus tool.
+
+## Changed
+
+* The overlay buttons (i.e. undo, redo, etc.) in the sticker, text and brush tool have been moved to the bottom.
+* `StickerTintMode.tint` has been renamed to `StickerTintMode.solid`.
+* `StickerTintMode.ink` has been renamed to `StickerTintMode.colorized`.
+* When adding long text the created label breaks the text into multiple lines if the font size would be too small otherwise.
+* `IMGLYSetLocalizationDictionary` has been replaced by `PESDK.localizationDirectory`.
+* `IMGLYSetLocalizationBlock` has been replaced by `PESDK.localizationBlock`.
+* `IMGLYSetBundleImageBlock` has been replaced by `PESDK.bundleImageBlock`.
+
+## Fixed
+
+* `DefaultProgressView` was not positioned correctly when used in an iPad Split View environment.
+* The menu collection views were not positioned correctly when used in an iPad Split View environment. 
+
 # 6.3.1
 
 ## Fixed
