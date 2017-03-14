@@ -1,8 +1,27 @@
+# 6.2.0
+
+## Added
+
+* Support for wide color images. More information is available [here](https://medium.com/imgly/bringing-wide-color-to-photoeditor-sdk-a6ce8bb19ef7#.1nw0egenf).
+* Added redo support and optimized undo support. Each time the sticker, text or brush tool is openend, a new undo/redo stack is created and local changes within those tools can be un- and redone. The `PhotoEditViewController` also has support for undo and redo and performs all undo or redo operations of the tools mentioned above combined, either step by step or tool by tool (see `PhotoEditViewControllerOptions.undoStepByStep`).
+
+## Changed
+
+* `M_PI` has been replaced by `.pi`, `FLT_EPSILON` has been replaced by `.ulpOfOne`
+* Adding a new sticker from within the `StickerOptionsToolController` now opens the already instantiated `StickerToolController` that was passed to `PhotoEditViewController` instead of creating a new instance.
+* The blur radius specified in the `FocusToolController` is now relative to the smaller side of the image instead of an absolute value, which means that the final output image looks like the preview image. 
+
+## Fixed
+
+* Fixed a crash that occurred when setting `CameraViewControllerOptions.showFilters` to `false`.
+
 # 6.1.4
 
 ## Fixed
 
 * Fixed a crash in `CameraViewController`.
+* The `photoActionButtonConfigurationClosure` closure was not called initially.
+* Changing the `tintColor` of the button to take a photo works now.
 
 # 6.1.3
 
