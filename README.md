@@ -17,8 +17,8 @@
 
 ## Overview
 
-Our SDK provides tools for creating photo applications for iOS with a big variety of filters that can be previewed in real-time. Unlike other apps that allow a live preview of filters, the Photo Editor SDK even provides a live preview when using high-resolution images. Version 3.0 removes any resolution limits, is written in Swift and allows for easy customization.
-Also we added multiple sticker and text support in a Non-destructive manner. That means that the User can change the position, size, scale, and z-order at any time.
+Our SDK provides tools for adding photo editing capabilities to your iOS application with a big variety of filters that can be previewed in realtime. Unlike other apps that allow a live preview of filters, the Photo Editor SDK even provides a live preview when using high-resolution images. We do not have any resolution limits, the framework is written in Swift and allows for easy customization.
+Additionally we support adding stickers and text in a non-destructive manner, which means that you can change the position, size, scale and order at any given time, even after applying other effects or cropping the photo.
 
 <div class="documentation__disclaimer">
 <h4>License Terms</h4>
@@ -28,17 +28,25 @@ A commercial license is required for any app or service that has any form of mon
 
 ## Features
 
-* 62 stunning build in filters to choose from.
-* Native code. Our backend is Core Image based, therefore we dodge all the nasty OpenGL problems other frameworks face.
-* iPad support. Since version two uses auto layout, it's easy to compile your app for iPhone and iPad. No more ugly nested iPhone app on your iPad.
-* Design filters in photoshop! Before you had to tweak values in code or copy & paste them from photoshop or your favorite image editor. With our response technology that is a thing of the past. Design your filter in photoshop, once you are done apply it onto the provided identity image. That will 'record' the filter response. Save it, add it as new filter, done!
-* Swift. Keeping up with time, we used Swift to code the img.ly SDK, leading to leaner easier code.
-* Live preview, as with version one, filters can be previewed in the camera preview.
-* Low memory footprint, with version two we were able to reduce the memory footprint massively.
-* Non-destructive. Don't like what you did? No problem, just redo or even discard it.
-* Highly customizable. Style the UI as you wish to match your needs.
-* Objective-C support.
-* FAST, we re-implemented our renderer, and we made it super fast !
+* 62 stunning built in filters to choose from.
+* Native code: Our rendering engine is based on Apple's Core Image, therefore we dodge all the nasty OpenGL problems other frameworks face.
+* iPad support: The Photo Editor SDK uses auto layout for its views and adapts to each screen size - iPhone or iPad.
+* Design filters in Photoshop: With most photo editing frameworks you have to tweak values in code or copy & paste them from Photoshop or your favorite image editor. With our response technology that is a thing of the past. Design your filter in Photoshop, once you are done apply it onto the provided identity image. That will 'record' the filter response - save it, add it as new filter, done!
+* Swift: Keeping up with time, we chose Swift as the main development language of the Photo Editor SDK, leading to leaner easier code.
+* Live preview: Filters can be previewed directly in the camera preview.
+* Low memory footprint: We were able to reduce our memory footprint significantly.
+* Non-destructive: Don't like what you did? No problem, just redo or even discard it.
+* Highly customizable: Style the UI as you wish to match your needs.
+* Objective-C support: All of our public API is Objective-C compatible.
+* Fast: Our renderer uses hardware acceleration and the GPU, which makes it lightning fast.
+
+### New in Version 6.0
+
+* Updated UI: We've made some UI changes leading to an even better user experience.
+* Lots of refactoring and stability improvements
+* Updated Sticker Tool: We now support multiple sticker categories and sticker coloring.
+* Updated Focus Tool: You can finally adjust the gradient and we've moved from a gaussian blur to a box blur for an even better result.
+* Transform Tool: We've completely redesigned and rewritten our crop tool. You can now not only crop your image, but also straighten it.
 
 <p><img style="display:block" src="https://www.photoeditorsdk.com/assets/images/documentation/ios/product.png"></p>
 
@@ -59,7 +67,7 @@ Here's what you have to add to your `Podfile`:
 ```
 use_frameworks!
 
-pod 'imglyKit', '~> 3.0'
+pod 'imglyKit', '~> 6.0'
 ```
 
 Then run `pod install`.
@@ -75,63 +83,60 @@ Just drag `imglyKit.framework` into the `Embedded Binaries` section of your targ
 
 # Usage
 Our SDK provides two main view controllers. One to work with the camera, the other to
-edit an image. In the following section we will describe how these are set up and how to embed them
-within an `UINavigationController`.
+edit an image. In the following section we will describe how these are set up and how to embed them within an `UINavigationController`.
 
 ## Add a CameraViewController
 
-The `CameraViewController` is out to provide a preview of the photo that can be taken.
-Above that it provides UI elements to perform setting changes as in, setting the flash, choosing the camera,
-and last but not least choosing a filter. The set up is rather easy.
+The `CameraViewController` class is responsible for displaying an interface to interact with the camera. It provides user interface elements among others to enable the flash, toggle the camera and choose a filter. All you have to do is the following:
 
 ```
 let cameraViewController = CameraViewController()
-presentViewController(cameraViewController, animated: true, completion: nil)
+present(cameraViewController, animated: true, completion: nil)
 ```
 
-The `CameraViewController` has a  completion block property. When it is set to `nil`, the taken photo is passed onto
-the `EditorViewController`.
+The `CameraViewController` has a `completionBlock` property. When it is set to `nil`, the taken photo is passed to the `PhotoEditViewController`, which is then presented modally.
 
-## Add an EditorViewController
+## Add a PhotoEditViewController
 
-The `EditorViewController` is out to provide several tool to edit an image, i.e. crop, filter, adjustment, etc.
-All these changes are Non-destructive. That means, until the user hit the accept button on the main editor, every change
-can be altered. A stickers, position can be changed, the color of a text, the crop area, everything.
-To present an `EditorViewController` just add these few lines:
+The `PhotoEditViewController` class is responsible for presenting and rendering an image. It is designed to work together with a `ToolbarController`, which is responsible to presenting and dismissing the various tool controllers.
+
+To present an `PhotoEditViewController` just add these few lines:
 
 ```
 let sampleImage = UIImage(named: "sample_image")
-let photoEditViewController = PhotoEditViewController(photo: sampleImage!)
-let toolStackController = ToolStackController(photoEditViewController: photoEditViewController)
-toolStackController.delegate = self
 
-presentViewController(toolStackController, animated: true, completion: nil)
+let photoEditViewController = PhotoEditViewController(photo: sampleImage!)
+photoEditViewController.delegate = self
+
+let toolbarController = ToolbarController()
+toolbarController.push(photoEditViewController, animated: false)
+
+present(toolbarController, animated: true, completion: nil)
 ```
 
-The delegate of the `ToolStackController` can be used to be notified when the user cancels the edit, the edit fails, or the edit is done. In the last case the `func toolStackController(toolStackController: ToolStackController, didFinishWithImage image: UIImage)` method is called.
+The delegate of the `PhotoEditViewController` can be used to be notified when the user cancels the edit, the edit fails, or the edit is done. In the last case the `func photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data)` method is called.
 
 ## Embed in an UINavigationController
 
-The controllers provided with the SDK, can be embedded within a `UINavigationController`. The following code demonstrates how.
+The controllers provided with the SDK can be embedded in an `UINavigationController`. The following code demonstrates how.
 
 ```
 let sampleImage = UIImage(named: "sample_image")
-let photoEditViewController = CustomPhotoEditViewController(photo: sampleImage!)
 
-let toolStackController = ToolStackController(photoEditViewController: photoEditViewController)
-toolStackController.navigationItem.title = "Editor"
-toolStackController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Cancel, target: photoEditViewController, action: "cancel:")
-toolStackController.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Save, target: photoEditViewController, action: "save:")
-toolStackController.delegate = self
+let photoEditViewController = PhotoEditViewController(photo: sampleImage!)
+photoEditViewController.delegate = self
 
-let navigationController = UINavigationController(rootViewController: toolStackController)
-navigationController.navigationBar.translucent = false
-navigationController.navigationBar.barStyle = .Black
+let toolbarController = ToolbarController()
+toolbarController.push(photoEditViewController, animated: false)
 
-presentViewController(navigationController, animated: true, completion: nil)
+let navigationController = UINavigationController(rootViewController: toolbarController)
+navigationController.navigationBar.barStyle = .black
+navigationController.navigationBar.isTranslucent = false
+
+present(navigationController, animated: true, completion: nil)
 ```
 
-To try these examples, and find out about more options please take a look at the provided sample project.
+To try these examples, and find out about more options please take a look at the sample project provided [here](https://github.com/imgly/imgly-sdk-ios).
 
 # Further reading
 
@@ -139,4 +144,4 @@ For a more detailed documentation, please see our [full documentation](https://w
 
 ## Author
 
-9elements GmbH, [@9elements](https://twitter.com/9elements), [http://www.9elements.com](http://www.9elements.com)
+9elements GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [https://www.photoeditorsdk.com](https://www.photoeditorsdk.com)
