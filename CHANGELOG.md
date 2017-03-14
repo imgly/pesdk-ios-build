@@ -1,3 +1,35 @@
+# 6.3.0
+
+## Added
+
+* Added an option to change the default color of newly added text (see `TextToolControllerOptions.defaultTextColor`).
+* A progress view is displayed while generating the preview image now.
+* Tinting of stickers can be enabled on a per sticker basis (see `Sticker.tintMode`).
+* Crop Aspect Ratios can be rotated by tapping on an already selected crop aspect (see `CropAspect.isRotatable`).
+
+## Changed
+
+* Changed the default icon of the transform tool.
+* The magic tool displays a selected state when active.
+* The `.straighten` option has been removed from the default options of `TextOptionsToolController` and `StickerOptionsToolController`.
+* The `.flip` option has been removed from the default options of `TextOptionsToolController`.
+* The alignment, bring to front, straighten and flip buttons within `TextOptionsToolController` were moved from an overlay into the menu.
+* When resizing text the bounding box of the text becomes wider along with the font size.
+* While the `BrushColorToolController` is active the user can continue to paint in the canvas.
+* Editing text works by just single tapping on an already selected label instead of long pressing.
+* The delete button within the brush tool was moved to the top, the bring to front button was moved from an overlay into the menu.
+* The flip, straighten and bring to front buttons within `StickerOptionsToolController` were moved from an overlay into the menu.
+
+## Fixed
+
+* Fixed a crash that occurred when opening the transform tool very quickly after presenting the editor.
+* Fixed an issue with the brush tool that occurred when opening the brush very quickly after presenting the editor.
+* Fixed an issue where the progress view would not disappear when tapping the save button.
+* Fixed an issue regarding the frame tool and rotated images.
+* Fixed a bug where a crop would sometimes be applied although the user tapped the cancel button.
+* When changing a text the changes are reflected in the label while typing.
+* Fixed a crash in `CameraController`.
+
 # 6.2.0
 
 ## Added
