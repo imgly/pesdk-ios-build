@@ -1,3 +1,13 @@
+# 6.4.1
+
+## Changed
+
+* Sticker and text overlays have a bigger touch area so that they are easier to grab.
+
+## Fixed
+
+* Fixed a rare crash in `CameraViewController` that occurred when disabling focus lock while deallocating the controller.
+
 # 6.4.0
 
 ## Added
@@ -18,7 +28,7 @@
 ## Fixed
 
 * `DefaultProgressView` was not positioned correctly when used in an iPad Split View environment.
-* The menu collection views were not positioned correctly when used in an iPad Split View environment. 
+* The menu collection views were not positioned correctly when used in an iPad Split View environment.
 
 # 6.3.1
 
@@ -72,7 +82,7 @@
 
 * `M_PI` has been replaced by `.pi`, `FLT_EPSILON` has been replaced by `.ulpOfOne`
 * Adding a new sticker from within the `StickerOptionsToolController` now opens the already instantiated `StickerToolController` that was passed to `PhotoEditViewController` instead of creating a new instance.
-* The blur radius specified in the `FocusToolController` is now relative to the smaller side of the image instead of an absolute value, which means that the final output image looks like the preview image. 
+* The blur radius specified in the `FocusToolController` is now relative to the smaller side of the image instead of an absolute value, which means that the final output image looks like the preview image.
 
 ## Fixed
 
@@ -114,7 +124,7 @@
 
 ## Fixed
 
-* Fixed a bug regarding image orientation that occured when saving an unedited image. The image that was passed to `PhotoEditViewController` is now passed back to the delegate untouched when saving and image without any modifications.
+* Fixed a bug regarding image orientation that occurred when saving an unedited image. The image that was passed to `PhotoEditViewController` is now passed back to the delegate untouched when saving and image without any modifications.
 
 # 6.1.0
 
