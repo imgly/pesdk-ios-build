@@ -1,3 +1,9 @@
+# 6.4.2
+
+## Fixed
+
+* Fixed a scaling issue regarding backdrops.
+
 # 6.4.1
 
 ## Changed
