@@ -1,3 +1,9 @@
+# 6.5.0
+
+## Changed
+
+This version is compiled with Swift 3.1 and can be used with Xcode 8.3. It does not contain any other changes.
+
 # 6.4.2
 
 ## Fixed
