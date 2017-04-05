@@ -1,3 +1,9 @@
+# 6.5.2
+
+## Fixed
+
+* Fixed a crash when adding text. This was introduced by the Swift 3.1 compiler, see [SR-4393](https://bugs.swift.org/browse/SR-4393) for more details.
+
 # 6.5.1
 
 ## Fixed
