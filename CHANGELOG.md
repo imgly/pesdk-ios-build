@@ -1,3 +1,9 @@
+# 6.5.3
+
+## Changed
+
+* We replaced the set of included fonts with much better looking fonts. 
+
 # 6.5.2
 
 ## Fixed
