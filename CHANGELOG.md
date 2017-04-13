@@ -1,8 +1,15 @@
+# 6.5.4
+
+## Changed
+
+* With the color picker expanded you can now tap anywhere above it to dismiss the color picker.
+* We restored iOS 8 compatibility in this release. Please note that this only means that the framework can be integrated into a target with iOS 8 as its deployment target. However most classes and especially all view controllers are *not* available on iOS 8. We strongly advise that you disable any editing functions for users running iOS 8.
+
 # 6.5.3
 
 ## Changed
 
-* We replaced the set of included fonts with much better looking fonts. 
+* We replaced the set of included fonts with much better looking fonts.
 
 # 6.5.2
 
