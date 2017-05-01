@@ -1,3 +1,38 @@
+# 7.0
+
+## Changed
+
+* **The SDK has been renamed from `imglyKit` to `PhotoEditorSDK` and all class prefixes have been renamed from `IMGLY` to `PESDK`. Likewise the CocoaPod has been renamed to `PhotoEditorSDK`.**
+* We now ship the framework as a DMG file and include the dSYM file and bcsymbolmaps for better debugging. To integrate the dSYM into your final app, please follow the updated manual integration guide.
+* The `PESDK.shared` singleton has been removed. All of its properties are now static properties on the `PESDK` class.
+* The default progress view must be set using the static `PESDK.progressView` property instead of the `Configuration` closure.
+* The integrated fonts have been changed.
+* The `AdjustToolController` has been improved for much better looking and faster adjustments.
+* We were able to significantly decrease the size of our filter's lookup images while also improving the filter's performance.
+* All asset names have been changed to a consistent naming scheme.
+* The overall look and feel of the `FrameToolController` has been improved.
+* Custom stickers are now added by setting `Sticker.all`, custom fonts are added by setting `FontImporter.all`, custom frames are added by setting `Frame.all` and custom overlays are added by setting `Overlay.all` instead of using the `Configuration` class.
+
+## Added
+
+* Serialization and deserialization has been added. Because of this many classes (e.g. `Sticker`, `Frame`) now require an `identifier`. For more information please see the documentation.
+* The `OverlayToolController` tool has been added, which can be used to add overlays to a photo. Please see the documentation for more information.
+* A custom logger with varying log levels was added. See documentation for more information.
+* The `Sticker` class now supports `.colorized` as its `tintMode`. See the API documentation for more information.
+* A 3:2 crop aspect has been added to `TransformToolController`'s defaults.
+* An Emoticon and a Shapes sticker set has been added.
+* `TextFontToolControllerOptions` now has a `fontSelectorViewConfigurationClosure` property and a `handleButtonConfigurationClosure` property for better customization.
+* `StickerToolControllerOptions` now has a `stickerPreviewSize` property to adjust the size of the stickers in the preview.
+
+## Removed
+
+* The Toy sticker set has been removed.
+
+## Fixed
+
+* The button to show/hide the font selector view within the `TextFontToolController` now respects the view's `tintColor`.
+* Full accessibility support has been restored.
+
 # 6.5.4
 
 ## Changed
