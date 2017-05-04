@@ -1,3 +1,15 @@
+# 7.0.1
+
+## Added
+
+* Added the ability to zoom using a pinch gesture within the `CameraViewController`.
+
+## Fixed
+
+* The icon of the 'No Overlay' option in the overlay tool was not using its @2x and @3x variants.
+* Fixed a bug with the new filters and adjustments.
+* Fixed interface rotation support.
+
 # 7.0
 
 ## Changed
