@@ -21,10 +21,11 @@ Our SDK provides tools for adding photo editing capabilities to your iOS applica
 Additionally we support adding stickers and text in a non-destructive manner, which means that you can change the position, size, scale and order at any given time, even after applying other effects or cropping the photo.
 
 <div class="documentation__disclaimer">
-<h4>License Terms</h4>
-Make sure you have a commercial license before releasing your app.
-A commercial license is required for any app or service that has any form of monetization: This includes free apps with in-app purchases or ad supported applications. Please contact us if you want to purchase the commercial license.
-</div>
+### License
+The PhotoEditorSDK is a product of 9elements GmbH. 
+Please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IOS-Build). Please see the included [LICENSE](LICENSE) for licensing details.
+
+
 
 ## Features
 
