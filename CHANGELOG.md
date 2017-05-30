@@ -1,3 +1,34 @@
+# 7.1.0
+
+## Added
+
+* The camera tags photos with their location now. This only works when using `Data` instances instead of `UIImage` instances to pass the photo around because those strip EXIF data. See `CameraViewController.dataCompletionBlock` for more details.
+* We added a default confirmation dialog when dismissing the editor with changes pending. This can be changed or disabled by setting `PhotoEditViewControllerOptions.discardConfirmationClosure`.
+
+## Changed
+
+* The preview image is now automatically resized when a slider overlays the preview at the bottom, so that is always completely visible.
+* We replaced the gaussian blur used in the focus tool with a lens blur like effect for much better looking photos. This does not work on the following older devices where we continue to use a gaussian blur due to performance issues:
+	* iPad mini 1st, 2nd and 3rd gen
+	* iPad 2nd and 3rd gen
+	* iPhone 4S
+	* iPod touch
+
+## Fixed
+
+* Fixed various issues with the serialization and deserialization features.
+* Fixed an issue with different color spaces used for the preview and the thumbnails in the filter tool.
+* Stickers now use anti-aliasing.
+* The icon of the 'No Frame' cell in the frame tool is now tinted with the cell's `tintColor` to better match other cells.
+* The label of the 'Magic' cell in the main menu is now tinted with the cell's `tintColor` when highlighted to better match other cells.
+* The `Slider` now sends a `.touchUpInside` event after a `.touchDown` event has been sent without dragging in between.
+* When adding a frame to a photo it would sometimes not completely cover the preview image (by about 1 px).
+* When selecting a sticker with its `tintMode` set to `.none` and then dismissing the `StickerOptionsToolController`, the color option would be visible for a split second during the dismissal animation.
+* The `BoxGradientView` and `CircleGradientView` now only draw themselves while visible, resulting in a minor performance improvement.
+* Sprites didn't have the correct position for a split second when opening the frame tool.
+* Sprites would be rotated in the wrong direction when the photo has been flipped.
+* Text bounding box resizing would be inverted if the image has been flipped and rotated.
+
 # 7.0.1
 
 ## Added
