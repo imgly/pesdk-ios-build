@@ -23,7 +23,7 @@ Additionally we support adding stickers and text in a non-destructive manner, wh
 ## License
 The PhotoEditorSDK is a product of 9elements GmbH. 
 Please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IOS-Build). 
-Please see the included [LICENSE](LICENSE) for licensing details.
+Please see the included [LICENSE](https://github.com/imgly/pesdk-ios-build/blob/master/LICENSE.md) for licensing details.
 
 
 
@@ -62,7 +62,7 @@ Please see the included [LICENSE](LICENSE) for licensing details.
 
 ## License
 
-Please see [LICENSE](https://www.photoeditorsdk.com/LICENSE.txt) for licensing details.
+Please see [LICENSE](https://github.com/imgly/pesdk-ios-build/blob/master/LICENSE.md) for licensing details.
 
 # Documentation
 
