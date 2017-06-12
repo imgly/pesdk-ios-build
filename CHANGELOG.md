@@ -1,3 +1,20 @@
+## 7.1.1
+
+## Added
+
+* `CameraViewControllerOptions` includes a `includeUserLocation` property now that is `true` by default. It can be used to stop the camera from asking for the user's location.
+
+## Changed
+
+* `LoggerProtocol` is now a `class` protocol because loggers are required to be reference types in the current implementation.
+
+## Fixed
+
+* Fixed several smaller bugs regarding deserialization.
+* Sometimes the cropping area would be resized while modifying the straighten angle.
+* Memory is not copied twice anymore during painting fragment restoration.
+* The project compiles with Xcode 9 now.
+
 # 7.1.0
 
 ## Added
@@ -46,7 +63,7 @@
 ## Changed
 
 * **The SDK has been renamed from `imglyKit` to `PhotoEditorSDK` and all class prefixes have been renamed from `IMGLY` to `PESDK`. Likewise the CocoaPod has been renamed to `PhotoEditorSDK`.**
-* We now ship the framework as a DMG file and include the dSYM file and bcsymbolmaps for better debugging. To integrate the dSYM into your final app, please follow the updated manual integration guide.
+* We now ship the framework as a DMG file and include the dSYM file and bcsymbolmaps for better debugging. To integrate the dSYM into your final app, please follow the [updated manual integration guide](http://docs.photoeditorsdk.com/guides/ios/v7_1/introduction/getting_started).
 * The `PESDK.shared` singleton has been removed. All of its properties are now static properties on the `PESDK` class.
 * The default progress view must be set using the static `PESDK.progressView` property instead of the `Configuration` closure.
 * The integrated fonts have been changed.
