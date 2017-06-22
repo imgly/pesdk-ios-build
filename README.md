@@ -1,5 +1,5 @@
 <p align="center">
-  <a target="_blank" href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IOS-Build"><img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/></a>
+  <a target="_blank" href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=iOS-Build&utm_term=iOS"><img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/></a>
 </p>
 <p align="center">
 	<a href="https://cocoapods.org/pods/PhotoEditorSDK">
