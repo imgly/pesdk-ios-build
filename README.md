@@ -21,7 +21,7 @@ The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_
 
 The SDK ships with a large variety of filters, covering all state of the art style- and mood settings that can be previewed in real-time. Unlike other apps that allow a live preview of filters, the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=iOS) even provides a live preview when using high-resolution images. 
 
-All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see Features for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=iOS).
+All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see [Features](https://github.com/imgly/pesdk-ios-build/blob/master/README.md#features) for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=iOS).
 
 
 ## License
