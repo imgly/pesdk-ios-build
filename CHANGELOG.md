@@ -1,3 +1,19 @@
+## 7.2.0
+
+## Added
+
+* `PhotoEditViewController` has a new property called `hasChanges`, which is `true` if a user applied any changes to a photo.
+* `StickerToolControllerOptions` has a new property called `defaultStickerCategoryIndex` that can be used to specify the index of the initially selected sticker category.
+* All `UICollectionViewCell` subclasses can be replaced with custom subclasses using `Configuration`'s `replaceClass(_:replacingClass:moduleName:)` method.
+
+## Changed
+
+* `TransformToolController` now sends a `.transformStraightenAngleChange` analytics event for changes of the straighten angle.
+* `TransformToolController` now includes `.cropRect`, `.straightenAngle` and `.aspectRatio` attributes in its `.applyChanges` analytics event.
+* When adding or removing a sticker a `.stickerAdd` or `.stickerRemove` analytics event is sent with the associated sticker as a `.sticker` attribute. Those events are also sent when adding or removing a sticker by tapping the undo/redo buttons.
+* When adding or removing text a `.textAdd` or `.textRemove` analytics event is sent with the associated text as a `.text` attribute. Those events are also sent when adding or removing text by tapping the undo/redo buttons.
+* `TextOptionsToolController` now includes `.text`, `.font`, `.textColor`, `.backgroundColor` and `.alignment` attributes in its `.applyChanges` analytics event.
+
 ## 7.1.1
 
 ## Added
