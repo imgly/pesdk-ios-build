@@ -1,3 +1,22 @@
+## 8.1.0
+
+### Added
+
+* Added the possibility to change a sticker's brightness, contrast and saturation. Take a look at `Sticker.allowBrightnessAdjustment`, `Sticker.allowContrastAdjustment`, `Sticker.allowSaturationAdjustment` and `StickerAction.brightness`, `StickerAction.contrast`, `StickerAction.saturation` for more details.
+* iPhone X support for `CameraViewController`.
+* Added `TextToolControllerOptions.dimmingViewConfigurationClosure`.
+
+### Changed
+
+* `Font` expects an `URL` instead of a `String` now.
+
+### Fixed
+
+* Fixed a misplaced title view on iOS 9 when embedding the `PhotoEditViewController` inside a `UINavigationController`.
+* `StickerToolController` displays the currently selected sticker category as its title again.
+* The color picker's saturation and brightness picker updates as expected now when saturation is set to 0 and the user drags the hue picker.
+* `ColorPickerViewController` and `FontSelectorViewController` didn't call `addChildViewController(_:)` and `didMove(toParentViewController:)` for their contained `SpriteEditController`, resulting in layout issues.
+
 ## 8.0.1
 
 ### Fixed
