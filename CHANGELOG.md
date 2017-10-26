@@ -1,3 +1,19 @@
+## 8.1.1
+
+### Added
+
+* Added haptic feedback for supported devices.
+* Added class replacement support for `StickerImageView`, `FrameImageView`, `SpriteLabel`, `Painting` and `CanvasView`.
+
+### Changed
+
+* Made the `BrushSpriteModel` initializers public.
+
+### Fixed
+
+* Fixed a bug where custom fonts would not be loaded.
+* Fixed an issue where sticker and sticker category thumbnails would sometimes have lower resolution.
+
 ## 8.1.0
 
 ### Added
