@@ -1,3 +1,9 @@
+## 8.1.2
+
+### Fixed
+
+* Fixed a crash when narrowing the text bounding box while zoomed in on the image.
+
 ## 8.1.1
 
 ### Added
