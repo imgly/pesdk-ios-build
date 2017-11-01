@@ -1,3 +1,9 @@
+## 8.1.3
+
+### Fixed
+
+* Fixed a bug where `FrameToolControllerOptions.cellConfigurationClosure` would not be called.
+
 ## 8.1.2
 
 ### Fixed
