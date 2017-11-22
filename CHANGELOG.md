@@ -1,3 +1,21 @@
+## 8.2.0
+
+### Added
+
+* Added a check that verifies that no two assets have the same identifier.
+* Added a `Photo` class that wraps different types of image data. Added `PhotoEditViewController(photoAsset:configuration:menuItems:photoEditModel:)` and `PhotoEditPreviewController(photoAsset:photoEditModel:)` and deprecated all previous initializers of both classes in favor of those. Please take a look at the API documentation for the `Photo` class, as using it correctly can have a huge impact on the memory footprint of the SDK.
+* Added `accessibilityIgnoresInvertColors` where needed.
+* PNG support, see `PhotoEditViewControllerOptions.outputImageFileFormat` for more details.
+* Added `PESDK.renderPipelineBlock` which can be used to modify each stage of the render pipeline.
+
+### Fixed
+
+* The top screen edge system gesture is now deferred to avoid conflicts with the transform tool.
+* The touchable area for `leftButton` and `rightButton` in the toolbar is wider now.
+* Removed all server calls for enterprise licenses.
+* Fixed invalid license check in `BrushColorToolController` and `TextOptionsToolController`.
+* Improved performance and memory usage.
+
 ## 8.1.3
 
 ### Fixed
