@@ -1,3 +1,14 @@
+## 8.2.1
+
+### Fixed
+
+* Overlays and blur handle transparency correctly now.
+* `TextFontToolControllerOptions.fontSelectorViewConfigurationClosure` and `TextFontToolControllerOptions.handleButtonConfigurationClosure` work as expected now.
+* Fixes an issue with undoing brush strokes.
+* Fixes an issue where the undo or redo buttons would be active although there was nothing to undo/redo.
+* Fixes a bug where video recording would take a long time to stop on older devices.
+* Fixes a rare crash with the license checker on iOS 9.
+
 ## 8.2.0
 
 ### Added
