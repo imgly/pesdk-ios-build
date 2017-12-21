@@ -1,3 +1,9 @@
+## 8.2.2
+
+### Fixed
+
+* Fixes an issue with the size of rotated stickers on iOS 10.
+
 ## 8.2.1
 
 ### Fixed
