@@ -1,3 +1,10 @@
+## 8.2.3
+
+### Fixed
+
+* Fixes an issue with the transform tool not rotating correctly.
+* Fixes an issue where an overlay would not be applied when selecting the 'Normal' blend mode.
+
 ## 8.2.2
 
 ### Fixed
