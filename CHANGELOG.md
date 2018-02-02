@@ -1,3 +1,17 @@
+## 8.2.4
+
+### Added
+
+* Added an option to show a close button in the `CameraViewController`. See `CameraViewControllerOptions. showCancelButton`, `CameraViewControllerOptions.cancelButtonConfigurationClosure` and `CameraViewController.cancelBlock` for more details.
+* Added full support for right-to-left languages.
+
+### Fixed
+
+* Fixeed an issue where the flash icon would not be visible while the camera was in video mode.
+* Fixed an issue where all Objective-C bridged `SpriteModel`s were of type `PESDKSpriteModel` instead of their concrete subclasses.
+* Fixed an issue with the toolbar having the wrong size while the keyboard was active on an iPhone X.
+* Fixed an issue where focus would not work in the camera after switching from back to front camera. 
+
 ## 8.2.3
 
 ### Fixed
