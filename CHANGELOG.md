@@ -1,3 +1,26 @@
+## 8.3.0
+
+### Added
+
+* Added support for HEIF image exports. See `PhotoEditViewControllerOptions.outputImageFileFormat` for more details.
+* Added backend support for gamma correction.
+
+### Changed
+
+* Built with Swift 4.1 / Xcode 9.3.
+* Switched from `Float` to `Double` in all photo edit and serialization models, because converting an `NSNumber` implicitly to `Float` (e.g. `NSNumber(0.26) as? Float`) returns `nil` with Swift 4.1 if it can't be represented exactly by a float. 
+* When updating `StickerCategory.all` while the sticker selection tool is visible, it now automatically reloads the available categories and stickers.
+
+### Fixed
+
+* Fixed some minor layout bugs on iPhone X.
+* Fixed an issue where the dSYM file would not be integrated into the final app when using CocoaPods.
+* Fixed an issue with the SoftLight blend mode not looking as expected.
+* Fixed an issue with the brush not respecting the hardness when deserializing.
+* Fixed an issue with the first path of a brush not being drawn when deserializing.
+* Fixed an issue with the radial blur being misplaced when deserializing.
+* Fixed an issue with overlays being misaligned.
+
 ## 8.2.4
 
 ### Added
@@ -7,7 +30,7 @@
 
 ### Fixed
 
-* Fixeed an issue where the flash icon would not be visible while the camera was in video mode.
+* Fixed an issue where the flash icon would not be visible while the camera was in video mode.
 * Fixed an issue where all Objective-C bridged `SpriteModel`s were of type `PESDKSpriteModel` instead of their concrete subclasses.
 * Fixed an issue with the toolbar having the wrong size while the keyboard was active on an iPhone X.
 * Fixed an issue where focus would not work in the camera after switching from back to front camera. 
