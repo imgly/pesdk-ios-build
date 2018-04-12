@@ -1,3 +1,12 @@
+## 8.3.1
+
+### Fixed
+
+* Fixed a crash when increasing the width of text too much.
+* Fixed an issue with color spaces. Colors are now always displayed correctly and the exported image will have the Display P3 color space on supported devices. Some filters still do not support wide color gamuts and clamp to the sRGB gamut. This will be fixed in a future update.
+* Fixed a crash when updating stickers or sticker categories from a thread different than the main thread while the sticker tool was visible.
+* Removed the new -Osize Swift optimization mode for now, because iTunes Connect rejects binaries built with it.
+
 ## 8.3.0
 
 ### Added
