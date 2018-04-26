@@ -1,3 +1,10 @@
+## 8.3.2
+
+### Fixed
+
+* Fixed a bug where setting a title on a discard or apply button would not work when embedding the `PhotoEditViewController` in a `UINavigationController`.
+* Fixed a crash when setting `StickerCategory.all` to an array of sticker categories with duplicate titles while the `StickerToolController` was visible.
+
 ## 8.3.1
 
 ### Fixed
