@@ -1,3 +1,9 @@
+## 8.3.3
+
+### Fixed
+
+* Fixed an issue with iTunes Connect not accepting the build when integrating the SDK via CocoaPods.
+
 ## 8.3.2
 
 ### Fixed
