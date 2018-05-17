@@ -1,3 +1,12 @@
+## 8.3.4
+
+### Fixed
+
+* Fixed an issue where deserializing a brush would not load its first point.
+* Fixed an issue where drawing a dot in the brush tool was not possible.
+* Fixed an issue where `renderPipelineBlock` was not called during the high resolution rendering.
+* When embedding the `PhotoEditViewController` in an `UINavigationController`, the `tintColor`, `imageEdgeInsets` and `backgroundImage` properties of the toolbar buttons are copied to the buttons in the navigation bar.
+
 ## 8.3.3
 
 ### Fixed
