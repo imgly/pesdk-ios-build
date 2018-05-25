@@ -1,3 +1,12 @@
+## 8.3.5
+
+### Fixed
+
+* Fixed a race condition when setting `StickerCategory.all`.
+* Fixed a race condition in `PaintingFragment`.
+* Fixed a layout bug when embedding `PhotoEditViewController` in a `UINavigationController` with an opaque navigation bar.
+* Fixed an issue where drawing a new path in the brush tool would flicker.
+
 ## 8.3.4
 
 ### Fixed
@@ -288,7 +297,7 @@
 ### Changed
 
 * **The SDK has been renamed from `imglyKit` to `PhotoEditorSDK` and all class prefixes have been renamed from `IMGLY` to `PESDK`. Likewise the CocoaPod has been renamed to `PhotoEditorSDK`.**
-* We now ship the framework as a DMG file and include the dSYM file and bcsymbolmaps for better debugging. To integrate the dSYM into your final app, please follow the [updated manual integration guide](http://docs.photoeditorsdk.com/guides/ios/v7_1/introduction/getting_started).
+* We now ship the framework as a DMG file and include the dSYM file and bcsymbolmaps for better debugging. To integrate the dSYM into your final app, please follow the [updated manual integration guide](https://docs.photoeditorsdk.com/guides/ios/v7_1/introduction/getting_started).
 * The `PESDK.shared` singleton has been removed. All of its properties are now static properties on the `PESDK` class.
 * The default progress view must be set using the static `PESDK.progressView` property instead of the `Configuration` closure.
 * The integrated fonts have been changed.
