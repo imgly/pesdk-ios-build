@@ -1,3 +1,14 @@
+## 8.3.6
+
+### Fixed
+
+* Fixed a retain cycle in the serialization test suite.
+* Fixed a bug when deserializing an unknown type of focus.
+* Fixed a bug that added a little rotation to stickers and text when the image is flipped, the state is serialized and then again deserialized.
+* Fixed a memory issues with labels that have a huge height by limiting the maximum allowed height.
+* Fixed a bug where the UI would become unresponsive when the editor is embedded in an `UINavigationController` and the user very quickly closes a tool after opening it.
+* Fixed a bug in the filter and focus shaders that prevented the iOS 12 shader compiler from compiling the shaders.
+
 ## 8.3.5
 
 ### Fixed
