@@ -1,3 +1,15 @@
+## 8.3.7
+
+### Added
+
+* Added support for gaussian and gradient focus to the renderer, to support cross-platform (de-)serialization.
+* Added support for custom frame sizes to the renderer, to support cross-platform (de-)serialization.
+
+### Fixed
+
+* Fixed an issue with an incorrect deserialized focus gradient size.
+* Fixed a layout issue in the `FontSelectorView`.
+
 ## 8.3.6
 
 ### Fixed
