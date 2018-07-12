@@ -1,3 +1,9 @@
+## 8.3.8
+
+### Fixed
+
+* Fixed multiple layout issues in the text design tool.
+
 ## 8.3.7
 
 ### Added
