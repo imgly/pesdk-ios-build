@@ -1,3 +1,21 @@
+## 8.3.9
+
+### Added
+
+* Added `PhotoEditViewController.serializedSettings(withImageData:)` which enables you to specify whether or not to include image data in the generated JSON. It is recommended that the image is not included in the JSON but saved as a separate file.
+* Added `PhotoEditViewControllerOptions.useParentNavigationItem`, allowing for the `PhotoEditViewController` to be embedded inside a custom container view controller inside a `UINavigationController`.
+* Added accessibility support to the Text Design tool.
+
+### Changed
+
+* Changed serialization to require a `Photo` object instead of `UIImage`. This improves memory usage.
+* Improved serialization performance when not including image data in the serialization.
+* Changed the Text Design Tool icon.
+
+### Fixed
+
+* Fixed a bug where the edit screen would not be dismissed when changing the text of an already added text design from within the `TextDesignOptionsToolController`.
+
 ## 8.3.8
 
 ### Fixed
