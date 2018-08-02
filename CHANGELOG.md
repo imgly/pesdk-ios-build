@@ -1,3 +1,13 @@
+## 8.3.10
+
+### Added
+
+* Added the option to adjust the gamma in the adjustments tool.
+
+### Fixed
+
+* Fixed a crash when instantiating a `PESDKPhotoEditMenuItem` with Objective-C for a tool that is not licensed.
+
 ## 8.3.9
 
 ### Added
