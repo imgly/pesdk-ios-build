@@ -1,3 +1,19 @@
+## 8.4.0
+
+### Added
+
+* Added a linear focus mode to the focus tool.
+* Added a gaussian focus mode to the focus tool.
+* Added temperature adjustments to the adjustment tool.
+* Added blacks adjustments to the adjustment tool.
+* Added whites adjustments to the adjustment tool.
+
+### Changed
+
+* The text tool now uses the same text settings of the last selected text when creating new texts.
+* The `FocusType` type has been deprecated because it used incorrect namings. It is replaced by the `FocusMode` type, which uses the same namings as the PhotoEditor SDK on HTML5 and Android. More specifically `FocusType.linear` is now `FocusMode.mirrored` and `FocusType.gradient` is now `FocusMode.linear`, `.radial` and `.gaussian` remain the same.
+* The SDK can now be used for testing purposes without unlocking it with a license. A watermark image will be displayed above the edited photo in such cases.
+
 ## 8.3.10
 
 ### Added
