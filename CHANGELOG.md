@@ -1,3 +1,9 @@
+## 8.4.1
+
+### Fixed
+
+* Fixed a crash when done drawing a stroke in the brush tool.
+
 ## 8.4.0
 
 ### Added
