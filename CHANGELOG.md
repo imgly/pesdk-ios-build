@@ -1,3 +1,13 @@
+## 8.5.0
+
+### Added
+
+* Added `PhotoEditViewController.presentTool(for:)` to programmatically present the tool for a given `ToolMenuItem`. This can be used to directly transition to one of the tools when presenting the editor.
+
+### Changed
+
+* Changed all localization keys throughout the SDK to match the pattern `pesdk_context_type_description` where `context` is usually the tool where the string appears (e.g. `focus`), `type` represents the type of the string such as `button` or `text` and `description` represents the actual use of the string, such as `brightnessIntensitySliderLabel`. This scheme is now used on the other platforms as well. We're falling back to the old localization keys in case the new ones can't be found to not break backwards compatibility, but we suggest you adopt the new keys as soon as possible.
+
 ## 8.4.1
 
 ### Fixed
