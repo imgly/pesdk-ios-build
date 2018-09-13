@@ -1,3 +1,10 @@
+## 8.6.0
+
+### Changed
+
+* Migrated to Swift 4.2 and built the SDK with Xcode 10.0.
+* Updated the renderer to use Metal instead of OpenGLES on iOS 12 and supported devices.
+
 ## 8.5.0
 
 ### Added
@@ -349,10 +356,10 @@
 
 * The preview image is now automatically resized when a slider overlays the preview at the bottom, so that is always completely visible.
 * We replaced the gaussian blur used in the focus tool with a lens blur like effect for much better looking photos. This does not work on the following older devices where we continue to use a gaussian blur due to performance issues:
-	* iPad mini 1st, 2nd and 3rd gen
-	* iPad 2nd and 3rd gen
-	* iPhone 4S
-	* iPod touch
+    * iPad mini 1st, 2nd and 3rd gen
+    * iPad 2nd and 3rd gen
+    * iPhone 4S
+    * iPod touch
 
 ### Fixed
 
