@@ -1,3 +1,13 @@
+## 8.6.1
+
+### Fixed
+
+* The drop shadow of the UI controls to modify the focus in the focus tool had an y-offset of 1, which doesn't make sense because the controls can be rotated. This has been fixed by changing the y-offset to 0.
+* Fixed a bug where it was possible to make a text larger than the allowed maximum width.
+* Fixed a bug where the position of text in the preview and in the final image would not match.
+* Fixed a crash when clearing the text of an already created text design.
+* Fixed an issue with emojis in multiline text designs.
+
 ## 8.6.0
 
 ### Changed
