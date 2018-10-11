@@ -1,3 +1,15 @@
+## 8.6.2
+
+### Added
+
+* Added `TransformToolControllerOptions.scalePickerContainerViewConfigurationClosure` to enable customization of the scale picker's container view.
+
+### Fixed
+
+* Fixed an issue with missing text when deserializing a text design.
+* Fixed rendering issues on devices running iOS 12 but that do not have an A8 chip at least.
+* Fixed live filters not working in the camera.
+
 ## 8.6.1
 
 ### Fixed
@@ -366,10 +378,10 @@
 
 * The preview image is now automatically resized when a slider overlays the preview at the bottom, so that is always completely visible.
 * We replaced the gaussian blur used in the focus tool with a lens blur like effect for much better looking photos. This does not work on the following older devices where we continue to use a gaussian blur due to performance issues:
-    * iPad mini 1st, 2nd and 3rd gen
-    * iPad 2nd and 3rd gen
-    * iPhone 4S
-    * iPod touch
+	* iPad mini 1st, 2nd and 3rd gen
+	* iPad 2nd and 3rd gen
+	* iPhone 4S
+	* iPod touch
 
 ### Fixed
 
