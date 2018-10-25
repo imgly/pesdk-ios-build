@@ -1,3 +1,11 @@
+## 8.6.3
+
+### Fixed
+
+* Fixed an issue where setting the background color of the preview view would not work when using the Metal renderer.
+* Fixed a very rare deadlock when loading fonts caused by a bug in iOS 10.
+* Fixed an issue where the filter thumbnail cache would use more memory than required.
+
 ## 8.6.2
 
 ### Added
