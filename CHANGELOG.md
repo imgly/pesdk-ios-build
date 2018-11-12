@@ -1,3 +1,9 @@
+## 8.6.4
+
+### Fixed
+
+* Fixed a bug where the camera preview would be distorted.
+
 ## 8.6.3
 
 ### Fixed
