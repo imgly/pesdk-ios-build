@@ -1,3 +1,51 @@
+## 9.0.0
+
+### Added
+
+* Added `MenuCollectionViewCell` which is used for all cells throughout the main menus. This consolidates multiple `UICollectionViewCell` subclasses which were used previously and enables easier customization.
+* Added undo and redo to `AdjustToolController`.
+* Added a reset button to `AdjustToolController`.
+* Added a reset button to `TransformToolController`.
+* Added a replace button to `StickerOptionsToolController`.
+* Added an opacity button to `StickerOptionsToolController`.
+* Added `FrameOptionsToolController` to modify the width and opacity of a frame.
+
+### Changed
+
+* The design of the cells in the main menus was slightly changed and unified across tools.
+* The design of the title in the lower toolbar was slightly changed to an all caps label with more character spacing.
+* Updated the Text Design tool to allow adding multiple Text Design objects.
+* Updated the Text Design inversion mechanism so that the user is able to adjust the padding of an inverted Text Design. 
+* Replaced the blend mode selection view in `OverlayToolController` with a button to toggle between available blend modes. 
+* Multiple icons were replaced across the SDK.
+* Instead of passing an array of `UIColor` objects and an array of matching `String` objects, describing the name of the color, the SDK now expects an array of `Color` objects.
+* The default hardness of a new brush stroke was changed from `1.0` to `0.5`.
+* `DefaultLogger` was updated to use `OSLog` on iOS 10.0 and later instead of regular `print` statements.
+* Changed the default tool order so that the Focus tool is next to the Adjust tool.
+
+### Fixed
+
+* Fixed a bug in the brush tool, where the size of the stroke's preview and an actual stroke on the canvas would mismatch.
+* The `StickerToolController` now opens with the previously selected sticker category.
+* Excess padding on the left and right of `TextDesignSunshine` was removed.
+* `TextDesignBlocksLight` now displays decorative lines as seen in its preview.
+* Fixed a bug where the output image would be black when adding a sticker and tinting it using the `.colorized` tint mode on iOS 12.0 and devices supporting Metal.
+* Fixed a bug where the camera preview would be darker than the actual image on iPhone XS devices.
+
+### Removed
+
+* Removed `ActivityBorderedCollectionViewCell` in favor of `MenuCollectionViewCell`.
+* Removed `BorderedCollectionViewCell` in favor of `MenuCollectionViewCell`.
+* Removed `IconBorderedCollectionViewCell` in favor of `MenuCollectionViewCell`.
+* Removed `IconCaptionCollectionViewCell` in favor of `MenuCollectionViewCell`.
+* Removed `LabelBorderedCollectionViewCell` in favor of `MenuCollectionViewCell`.
+* Removed `LabelCaptionCollectionViewCell` in favor of `MenuCollectionViewCell`.
+* Removed `LabelIconBorderedCollectionViewCell` in favor of `MenuCollectionViewCell`.
+* Removed `FilterCollectionViewCell` in favor of `MenuCollectionViewCell`.
+* Removed all previously deprecated API.
+* Removed all `AsNSNumber` properties. These are now exposed to Objective-C with their regular name (e.g. `allowedAdjustOverlayActions ` instead of `allowedAdjustOverlayActionsAsNSNumbers`.
+* Removed mapping between old localization keys and new localization keys.
+
 ## 8.6.4
 
 ### Fixed
