@@ -1,3 +1,22 @@
+## 9.1.0
+
+### Added
+
+* Added `Effect` type as the base class for any filter effect that can be applied to an image.
+* Added new duotone filter effect `DuoToneEffect`.
+
+### Changed
+
+* The `PhotoEffect` class has been deprecated. Its initializers have been split into two new `Effect` subclasses. The `LUTEffect` is the most commonly used filter effect based on an image-based lookup table (LUT) and the `CoreImageEffect` allows to use any registered Core Image filter.
+* All occurrences of `photoEffect` have been renamed to `effect`. Backward-compatible interfaces are introduced and marked as deprecated. Xcode will provide renaming suggestions.
+
+### Fixed
+
+* Fixed rare crash when opening the frame tool.
+* Fixed image export with colorized stickers.
+* Fixed deserializations with colorized stickers.
+* Fixed readability issue with the text input field in the text design tool. The text input string does not change its color anymore.
+
 ## 9.0.0
 
 ### Added
