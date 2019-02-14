@@ -1,3 +1,15 @@
+## 9.1.1
+
+### Changed
+
+* Changed the company name.
+* Source code is now compatible with Swift 5.
+
+### Fixed
+
+* Fixed camera crop to square preview view.
+* Fixed sticker tint modes with alpha values other than one.
+
 ## 9.1.0
 
 ### Added
