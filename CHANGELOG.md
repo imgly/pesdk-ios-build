@@ -1,3 +1,19 @@
+## 9.2.0
+
+### Added
+
+* Added folders to the `FilterToolController` to group related filters together and to reduce clutter in the menu. To disable folders and get back the old behavior, simply set `FilterToolControllerOptions.filterGroups` to `[]`.
+* Added our new duotone filters to the default filters in `Effect.all`.
+
+### Changed
+
+* Changed the display name of a couple of filters. Their identifier remain the same to maintain compatibility with existing serializations.
+
+### Fixed
+
+* Improved performance when interacting with multiple stickers.
+* Fixed `TextFontToolControllerOptions.actionButtonConfigurationClosure` to receive a reference to the cell and the matching `Font` object instead of just a string.
+
 ## 9.1.1
 
 ### Changed
