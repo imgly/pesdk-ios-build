@@ -1,3 +1,15 @@
+## 9.3.0
+
+### Added
+
+* Added `photoEditModel` property to `CameraViewController` which allows to conveniently pass the filter settings from the camera to a `PhotoEditViewController` in a custom `dataCompletionBlock` of the `CameraViewController`.
+* Added `ColorPipetteView` to `ColorPickerViewController` which enables a color pipette tool for every `PipettableColor` item in a color palette. Available color palettes are configured via the `availableColors` array, e.g., in the `ColorToolControllerOptionsBuilder`, `TextColorToolControllerOptionsBuilder`, and `BrushColorToolControllerOptionsBuilder`. A pipettable color is added as the first item to the aforementioned default color palettes.
+
+### Fixed
+
+* Fixed a bug in `TextOptionsToolController` where the menu would not display the correct font, text color, background color and alignment of a selected text.
+* Fixed a bug in `StickerToolController` where the optional `didEnterToolClosure` and `willLeaveToolClosure` were not executed.
+
 ## 9.2.0
 
 ### Added
