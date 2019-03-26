@@ -1,3 +1,9 @@
+## 9.4.0
+
+### Changed
+
+* Built with Swift 5.0 / Xcode 10.2.
+
 ## 9.3.0
 
 ### Added
