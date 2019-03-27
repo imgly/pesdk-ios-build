@@ -1,3 +1,9 @@
+## 9.4.1
+
+### Fixed
+
+* Fixed iOS Simulator issues for Objective-C.
+
 ## 9.4.0
 
 ### Changed
