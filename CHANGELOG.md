@@ -1,16 +1,33 @@
-## 9.4.1
+## [9.5.0]
+
+### Added
+
+* Added enhanced rotational and positional snapping for sprites, e.g., stickers, texts, and text designs. Global `SnappingOptions` can be configured with the `configureSnapping` method of the `ConfigurationBuilder`.
+
+### Changed
+
+* If an expired trial license is used the SDK will now resort to the watermark mode instead of purposely crashing the app.
+
+### Fixed
+
+* Fixed blacks and whites adjustments should not affect the alpha channel.
+* Fixed issues with duplicate symbols when the host app uses `IGListKit`.
+* Fixed `PhotoEditViewControllerOptions.actionButtonConfigurationClosure` not being called.
+* Fixed an issue with `FrameOptionsToolControllerOptions` showing a misaligned part of the photo when the photo is rotated.
+
+## [9.4.1]
 
 ### Fixed
 
 * Fixed iOS Simulator issues for Objective-C.
 
-## 9.4.0
+## [9.4.0]
 
 ### Changed
 
 * Built with Swift 5.0 / Xcode 10.2.
 
-## 9.3.0
+## [9.3.0]
 
 ### Added
 
@@ -22,7 +39,7 @@
 * Fixed a bug in `TextOptionsToolController` where the menu would not display the correct font, text color, background color and alignment of a selected text.
 * Fixed a bug in `StickerToolController` where the optional `didEnterToolClosure` and `willLeaveToolClosure` were not executed.
 
-## 9.2.0
+## [9.2.0]
 
 ### Added
 
@@ -38,7 +55,7 @@
 * Improved performance when interacting with multiple stickers.
 * Fixed `TextFontToolControllerOptions.actionButtonConfigurationClosure` to receive a reference to the cell and the matching `Font` object instead of just a string.
 
-## 9.1.1
+## [9.1.1]
 
 ### Changed
 
@@ -50,7 +67,7 @@
 * Fixed camera crop to square preview view.
 * Fixed sticker tint modes with alpha values other than one.
 
-## 9.1.0
+## [9.1.0]
 
 ### Added
 
@@ -69,7 +86,7 @@
 * Fixed deserializations with colorized stickers.
 * Fixed readability issue with the text input field in the text design tool. The text input string does not change its color anymore.
 
-## 9.0.0
+## [9.0.0]
 
 ### Added
 
@@ -117,13 +134,13 @@
 * Removed all `AsNSNumber` properties. These are now exposed to Objective-C with their regular name (e.g. `allowedAdjustOverlayActions ` instead of `allowedAdjustOverlayActionsAsNSNumbers`.
 * Removed mapping between old localization keys and new localization keys.
 
-## 8.6.4
+## [8.6.4]
 
 ### Fixed
 
 * Fixed a bug where the camera preview would be distorted.
 
-## 8.6.3
+## [8.6.3]
 
 ### Fixed
 
@@ -131,7 +148,7 @@
 * Fixed a very rare deadlock when loading fonts caused by a bug in iOS 10.
 * Fixed an issue where the filter thumbnail cache would use more memory than required.
 
-## 8.6.2
+## [8.6.2]
 
 ### Added
 
@@ -143,7 +160,7 @@
 * Fixed rendering issues on devices running iOS 12 but that do not have an A8 chip at least.
 * Fixed live filters not working in the camera.
 
-## 8.6.1
+## [8.6.1]
 
 ### Fixed
 
@@ -153,14 +170,14 @@
 * Fixed a crash when clearing the text of an already created text design.
 * Fixed an issue with emojis in multiline text designs.
 
-## 8.6.0
+## [8.6.0]
 
 ### Changed
 
 * Migrated to Swift 4.2 and built the SDK with Xcode 10.0.
 * Updated the renderer to use Metal instead of OpenGLES on iOS 12 and supported devices.
 
-## 8.5.0
+## [8.5.0]
 
 ### Added
 
@@ -170,13 +187,13 @@
 
 * Changed all localization keys throughout the SDK to match the pattern `pesdk_context_type_description` where `context` is usually the tool where the string appears (e.g. `focus`), `type` represents the type of the string such as `button` or `text` and `description` represents the actual use of the string, such as `brightnessIntensitySliderLabel`. This scheme is now used on the other platforms as well. We're falling back to the old localization keys in case the new ones can't be found to not break backwards compatibility, but we suggest you adopt the new keys as soon as possible.
 
-## 8.4.1
+## [8.4.1]
 
 ### Fixed
 
 * Fixed a crash when done drawing a stroke in the brush tool.
 
-## 8.4.0
+## [8.4.0]
 
 ### Added
 
@@ -192,7 +209,7 @@
 * The `FocusType` type has been deprecated because it used incorrect namings. It is replaced by the `FocusMode` type, which uses the same namings as the PhotoEditor SDK on HTML5 and Android. More specifically `FocusType.linear` is now `FocusMode.mirrored` and `FocusType.gradient` is now `FocusMode.linear`, `.radial` and `.gaussian` remain the same.
 * The SDK can now be used for testing purposes without unlocking it with a license. A watermark image will be displayed above the edited photo in such cases.
 
-## 8.3.10
+## [8.3.10]
 
 ### Added
 
@@ -202,7 +219,7 @@
 
 * Fixed a crash when instantiating a `PESDKPhotoEditMenuItem` with Objective-C for a tool that is not licensed.
 
-## 8.3.9
+## [8.3.9]
 
 ### Added
 
@@ -220,13 +237,13 @@
 
 * Fixed a bug where the edit screen would not be dismissed when changing the text of an already added text design from within the `TextDesignOptionsToolController`.
 
-## 8.3.8
+## [8.3.8]
 
 ### Fixed
 
 * Fixed multiple layout issues in the text design tool.
 
-## 8.3.7
+## [8.3.7]
 
 ### Added
 
@@ -238,7 +255,7 @@
 * Fixed an issue with an incorrect deserialized focus gradient size.
 * Fixed a layout issue in the `FontSelectorView`.
 
-## 8.3.6
+## [8.3.6]
 
 ### Fixed
 
@@ -249,7 +266,7 @@
 * Fixed a bug where the UI would become unresponsive when the editor is embedded in an `UINavigationController` and the user very quickly closes a tool after opening it.
 * Fixed a bug in the filter and focus shaders that prevented the iOS 12 shader compiler from compiling the shaders.
 
-## 8.3.5
+## [8.3.5]
 
 ### Fixed
 
@@ -258,7 +275,7 @@
 * Fixed a layout bug when embedding `PhotoEditViewController` in a `UINavigationController` with an opaque navigation bar.
 * Fixed an issue where drawing a new path in the brush tool would flicker.
 
-## 8.3.4
+## [8.3.4]
 
 ### Fixed
 
@@ -267,20 +284,20 @@
 * Fixed an issue where `renderPipelineBlock` was not called during the high resolution rendering.
 * When embedding the `PhotoEditViewController` in an `UINavigationController`, the `tintColor`, `imageEdgeInsets` and `backgroundImage` properties of the toolbar buttons are copied to the buttons in the navigation bar.
 
-## 8.3.3
+## [8.3.3]
 
 ### Fixed
 
 * Fixed an issue with iTunes Connect not accepting the build when integrating the SDK via CocoaPods.
 
-## 8.3.2
+## [8.3.2]
 
 ### Fixed
 
 * Fixed a bug where setting a title on a discard or apply button would not work when embedding the `PhotoEditViewController` in a `UINavigationController`.
 * Fixed a crash when setting `StickerCategory.all` to an array of sticker categories with duplicate titles while the `StickerToolController` was visible.
 
-## 8.3.1
+## [8.3.1]
 
 ### Fixed
 
@@ -289,7 +306,7 @@
 * Fixed a crash when updating stickers or sticker categories from a thread different than the main thread while the sticker tool was visible.
 * Removed the new -Osize Swift optimization mode for now, because iTunes Connect rejects binaries built with it.
 
-## 8.3.0
+## [8.3.0]
 
 ### Added
 
@@ -312,7 +329,7 @@
 * Fixed an issue with the radial blur being misplaced when deserializing.
 * Fixed an issue with overlays being misaligned.
 
-## 8.2.4
+## [8.2.4]
 
 ### Added
 
@@ -326,20 +343,20 @@
 * Fixed an issue with the toolbar having the wrong size while the keyboard was active on an iPhone X.
 * Fixed an issue where focus would not work in the camera after switching from back to front camera. 
 
-## 8.2.3
+## [8.2.3]
 
 ### Fixed
 
 * Fixes an issue with the transform tool not rotating correctly.
 * Fixes an issue where an overlay would not be applied when selecting the 'Normal' blend mode.
 
-## 8.2.2
+## [8.2.2]
 
 ### Fixed
 
 * Fixes an issue with the size of rotated stickers on iOS 10.
 
-## 8.2.1
+## [8.2.1]
 
 ### Fixed
 
@@ -350,7 +367,7 @@
 * Fixes a bug where video recording would take a long time to stop on older devices.
 * Fixes a rare crash with the license checker on iOS 9.
 
-## 8.2.0
+## [8.2.0]
 
 ### Added
 
@@ -368,19 +385,19 @@
 * Fixed invalid license check in `BrushColorToolController` and `TextOptionsToolController`.
 * Improved performance and memory usage.
 
-## 8.1.3
+## [8.1.3]
 
 ### Fixed
 
 * Fixed a bug where `FrameToolControllerOptions.cellConfigurationClosure` would not be called.
 
-## 8.1.2
+## [8.1.2]
 
 ### Fixed
 
 * Fixed a crash when narrowing the text bounding box while zoomed in on the image.
 
-## 8.1.1
+## [8.1.1]
 
 ### Added
 
@@ -396,7 +413,7 @@
 * Fixed a bug where custom fonts would not be loaded.
 * Fixed an issue where sticker and sticker category thumbnails would sometimes have lower resolution.
 
-## 8.1.0
+## [8.1.0]
 
 ### Added
 
@@ -415,7 +432,7 @@
 * The color picker's saturation and brightness picker updates as expected now when saturation is set to 0 and the user drags the hue picker.
 * `ColorPickerViewController` and `FontSelectorViewController` didn't call `addChildViewController(_:)` and `didMove(toParentViewController:)` for their contained `SpriteEditController`, resulting in layout issues.
 
-## 8.0.1
+## [8.0.1]
 
 ### Fixed
 
@@ -424,7 +441,7 @@
 * Fixed new warnings generated by Xcode 9.1 beta.
 * Fixed a bug where undo and redo would not work correctly when drawing out of bounds within the brush tool.
 
-## 8.0.0
+## [8.0.0]
 
 ### Added
 
@@ -454,7 +471,7 @@
 * Removed the transparent color from the default color palette for text color and brush color.
 * The `ToolbarController` class has been removed. An instance of `PhotoEditViewController` can now be used directly.
 
-## 7.3.0
+## [7.3.0]
 
 ### Fixed
 
@@ -467,7 +484,7 @@
 
 * Serialization version 2.0.0 has been deprecated in this release and will not be supported by future versions of the SDK. Please use PhotoEditor SDK 8.0 with serialization version 3.0.0 instead.
 
-## 7.2.0
+## [7.2.0]
 
 ### Added
 
@@ -483,7 +500,7 @@
 * When adding or removing text a `.textAdd` or `.textRemove` analytics event is sent with the associated text as a `.text` attribute. Those events are also sent when adding or removing text by tapping the undo/redo buttons.
 * `TextOptionsToolController` now includes `.text`, `.font`, `.textColor`, `.backgroundColor` and `.alignment` attributes in its `.applyChanges` analytics event.
 
-## 7.1.1
+## [7.1.1]
 
 ### Added
 
@@ -500,7 +517,7 @@
 * Memory is not copied twice anymore during painting fragment restoration.
 * The project compiles with Xcode 9 now.
 
-## 7.1.0
+## [7.1.0]
 
 ### Added
 
@@ -531,7 +548,7 @@
 * Sprites would be rotated in the wrong direction when the photo has been flipped.
 * Text bounding box resizing would be inverted if the image has been flipped and rotated.
 
-## 7.0.1
+## [7.0.1]
 
 ### Added
 
@@ -578,44 +595,44 @@
 * The button to show/hide the font selector view within the `TextFontToolController` now respects the view's `tintColor`.
 * Full accessibility support has been restored.
 
-## 6.5.4
+## [6.5.4]
 
 ### Changed
 
 * With the color picker expanded you can now tap anywhere above it to dismiss the color picker.
 * We restored iOS 8 compatibility in this release. Please note that this only means that the framework can be integrated into a target with iOS 8 as its deployment target. However most classes and especially all view controllers are *not* available on iOS 8. We strongly advise that you disable any editing functions for users running iOS 8.
 
-## 6.5.3
+## [6.5.3]
 
 ### Changed
 
 * We replaced the set of included fonts with much better looking fonts.
 
-## 6.5.2
+## [6.5.2]
 
 ### Fixed
 
 * Fixed a crash when adding text. This was introduced by the Swift 3.1 compiler, see [SR-4393](https://bugs.swift.org/browse/SR-4393) for more details.
 
-## 6.5.1
+## [6.5.1]
 
 ### Fixed
 
 * Fixed an issue with the `forceCropMode` setting.
 
-## 6.5.0
+## [6.5.0]
 
 ### Changed
 
 * This version is compiled with Swift 3.1 and can be used with Xcode 8.3. It does not contain any other changes.
 
-## 6.4.2
+## [6.4.2]
 
 ### Fixed
 
 * Fixed a scaling issue regarding backdrops.
 
-## 6.4.1
+## [6.4.1]
 
 ### Changed
 
@@ -625,7 +642,7 @@
 
 * Fixed a rare crash in `CameraViewController` that occurred when disabling focus lock while deallocating the controller.
 
-## 6.4.0
+## [6.4.0]
 
 ### Added
 
@@ -647,7 +664,7 @@
 * `DefaultProgressView` was not positioned correctly when used in an iPad Split View environment.
 * The menu collection views were not positioned correctly when used in an iPad Split View environment.
 
-## 6.3.1
+## [6.3.1]
 
 ### Fixed
 
@@ -656,7 +673,7 @@
 * Fixed an ambiguous constraints warning in `CameraViewController`.
 * Fixed an issue where the loading progress view would disappear while presenting the editor.
 
-## 6.3.0
+## [6.3.0]
 
 ### Added
 
@@ -688,7 +705,7 @@
 * When changing a text the changes are reflected in the label while typing.
 * Fixed a crash in `CameraController`.
 
-## 6.2.0
+## [6.2.0]
 
 ### Added
 
@@ -705,7 +722,7 @@
 
 * Fixed a crash that occurred when setting `CameraViewControllerOptions.showFilters` to `false`.
 
-## 6.1.4
+## [6.1.4]
 
 ### Fixed
 
@@ -713,7 +730,7 @@
 * The `photoActionButtonConfigurationClosure` closure was not called initially.
 * Changing the `tintColor` of the button to take a photo works now.
 
-## 6.1.3
+## [6.1.3]
 
 ### Added
 
@@ -730,20 +747,20 @@
 * Fixed a scaling issue for backdrop images.
 * Fixed the Podspec so that the resource bundle is not added twice to projects that use CocoaPods to integrate the SDK.
 
-## 6.1.2
+## [6.1.2]
 
 ### Added
 
 * A new API to integrate the SDK into your analytics. See `AnalyticsClient` and `PESDK.shared.analytics` for more details.
 * Added an option to set a backdrop image (`backdropImage`), a blend mode (`backdropBlendMode`) and an intensity (`backdropIntensity`) for it to `PhotoEditModel`.
 
-## 6.1.1
+## [6.1.1]
 
 ### Fixed
 
 * Fixed a bug regarding image orientation that occurred when saving an unedited image. The image that was passed to `PhotoEditViewController` is now passed back to the delegate untouched when saving and image without any modifications.
 
-## 6.1.0
+## [6.1.0]
 
 ### Added
 
@@ -754,13 +771,13 @@
 * Frames participate in the bring-to-front behavior so that stickers, text and brush can be moved behind or in front of frames.
 * Licensing has been improved to support multiple bundle identifiers within one license.
 
-## 6.0.1
+## [6.0.1]
 
 ### Added
 
 * Licensing
 
-## 6.0
+## [6.0.0]
 
 ### Added
 
