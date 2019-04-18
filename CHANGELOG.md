@@ -1,3 +1,14 @@
+## [9.6.0]
+
+### Added
+
+* Added `CameraViewController.locationAccessRequestClosure`. *Important*: If you currently have `CameraViewControllerOptions.includeUserLocation` set to `true` (the default) and still want photos taken with `CameraViewController` to be tagged with the location where the photo was taken, you will have to set this property. Starting Spring 2019, all apps submitted to the App Store that access user data are required to include a purpose string as soon as location permissions requests appear somewhere in the binary. Since we do not want to force developers integrating the SDK into their app to include a purpose string even with location tagging disabled, this closure was introduced, so that developers can decide for themselves if it is appropriate to request location access.
+
+### Changed
+
+* Changed all `MenuViewControllerDelegate` methods to be `open` instead of `public`.
+* Changed `MenuListSectionController` to `open` instead of `public`.
+
 ## [9.5.0]
 
 ### Added
