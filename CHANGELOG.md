@@ -1,3 +1,17 @@
+## [9.6.1]
+
+### Added
+
+* Added `reloadData(completion:)`, `performUpdates(animated:completion:)` and `reloadMenuItems(_:)` to `MenuViewController` to support menu reloading when implementing custom tools.
+
+### Fixed
+
+* Fixed `AdjustToolControllerOptions.adjustToolButtonConfigurationBlock` and `AdjustToolControllerOptions.adjustToolSelectedBlock` not being exposed to Objective-C.
+* Fixed LUT for builtin filter with identifier `imgly_lut_lomo`.
+* Fixed builtin filter identifiers `imgly_lut_kdynamic`, `imgly_lut_gobblin`, and `imgly_lut_pro400` for cross-platfom serialization.
+* Fixed default ordering of filters in order to match other platforms.
+* Fixed alpha value of sticker shape with identifier `pesdk_sticker_asset_badge28` which was not fully opaque before.
+
 ## [9.6.0]
 
 ### Added
