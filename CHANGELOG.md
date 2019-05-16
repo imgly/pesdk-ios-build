@@ -1,3 +1,13 @@
+## [9.7.0]
+
+### Added
+
+* Added optional predefined light color theme and easy to use theming capabilities. The `Configuration` allows now to specify and alter the overall `Theme` at a central place. Existing customization options via closures override the properties defined by a theme.
+
+### Fixed
+
+* Fixed `MenuListSectionController` not being subclassable.
+
 ## [9.6.1]
 
 ### Added
