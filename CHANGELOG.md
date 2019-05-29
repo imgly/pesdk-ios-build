@@ -1,3 +1,17 @@
+## [9.7.1]
+
+### Fixed
+
+* Fixed class replacement not working for `MenuCollectionViewCell` and `ColorCollectionViewCell`.
+* Fixed an ambiguous constraints warning in the brush tool.
+* Fixed an ambiguous constraints warning in the overlay tool.
+* Fixed a crash when removing fonts from `PhotoEditorSDK.bundle`.
+* Fixed an issue where the progress indicator would not disappear when passing a `Photo` object initialized with an invalid `URL`.
+
+### Removed
+
+* Remove unused `backgroundColor` in `ToolControllerOptions`.
+
 ## [9.7.0]
 
 ### Added
@@ -18,7 +32,7 @@
 
 * Fixed `AdjustToolControllerOptions.adjustToolButtonConfigurationBlock` and `AdjustToolControllerOptions.adjustToolSelectedBlock` not being exposed to Objective-C.
 * Fixed LUT for builtin filter with identifier `imgly_lut_lomo`.
-* Fixed builtin filter identifiers `imgly_lut_kdynamic`, `imgly_lut_gobblin`, and `imgly_lut_pro400` for cross-platfom serialization.
+* Fixed builtin filter identifiers `imgly_lut_kdynamic`, `imgly_lut_gobblin`, and `imgly_lut_pro400` for cross-platform serialization.
 * Fixed default ordering of filters in order to match other platforms.
 * Fixed alpha value of sticker shape with identifier `pesdk_sticker_asset_badge28` which was not fully opaque before.
 
