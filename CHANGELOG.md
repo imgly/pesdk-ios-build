@@ -1,3 +1,9 @@
+## [9.8.0]
+
+### Added
+
+* Added a sharpness option to the adjustments tool.
+
 ## [9.7.1]
 
 ### Fixed
