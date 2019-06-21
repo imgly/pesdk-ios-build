@@ -1,3 +1,11 @@
+## [9.8.1]
+
+### Fixed
+
+* Fixed customize color of title label via `titleViewConfigurationClosure`.
+* Fixed preview of transparent wide color images on P3 displays for iOS 11 and earlier where the transparent background appeared always black.
+* `PhotoEditPreviewController.previewView.backgroundColor` can now be used to change the background color of transparent images in the preview which was always black if this property was set.
+
 ## [9.8.0]
 
 ### Added
