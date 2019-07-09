@@ -1,3 +1,19 @@
+## [9.8.2]
+
+### Added
+
+* Added `FilterToolControllerOptions.folderCellConfigurationClosure` to configure cells that represent a folder within the filter tool.
+* Added an `overlayButtonInsets` property to `AdjustToolControllerOptions`, `BrushToolControllerOptions`, `PhotoEditViewControllerOptions`, `StickerOptionsToolControllerOptions`, `TextOptionsToolControllerOptions` and `TextDesignOptionsToolControllerOptions` to easily modify the overlay button's insets in the corresponding tool controller.
+
+### Changed
+
+* Designated initializers of `PhotoEditToolController` subclasses are now `public` to enable subclassing and thus class replacement of tools.
+
+### Fixed
+
+* Fixed class replacement not working for `MenuListSectionController` subclasses by making all concrete subclasses of `MenuListSectionController` `open`.
+* Fixed `FilterToolControllerOptions.filterCellConfigurationClosure` not being called for all effect cells when using folders.
+
 ## [9.8.1]
 
 ### Fixed
