@@ -1,3 +1,9 @@
+## [9.8.3]
+
+### Fixed
+
+* Fixed class replacement not working for `SliderTooltip`.
+
 ## [9.8.2]
 
 ### Added
