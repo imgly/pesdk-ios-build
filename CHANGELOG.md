@@ -1,3 +1,43 @@
+## [10.0.0]
+
+The `PhotoEditorSDK.framework` was split into two frameworks, `ImglyKit.framework` and `PhotoEditorSDK.framework`:
+
+- `ImglyKit.framework` contains most of the logic that is required for rendering, displaying and editing media.
+- `PhotoEditorSDK.framework` contains classes that are specific to photo editing.
+
+A new `VideoEditorSDK.framework` was introduced, that uses the same `ImglyKit.framework` as `PhotoEditorSDK.framework` does. This new framework contains classes that are specific to video editing. For more details please take a look at [www.videoeditorsdk.com](https://www.videoeditorsdk.com).
+
+
+### Added
+
+* [ImglyKit] Added a `MediaEditViewController` class that is the superclass for `PhotoEditViewController` and `VideoEditViewController`.
+* [ImglyKit] Added a `MediaEditPreviewController` class that is the superclass for `PhotoEditPreviewController` and `VideoEditPreviewController`.
+* [VideoEditorSDK] Added a `Video` class for passing videos to the editor.
+* [VideoEditorSDK] Added a `VideoEditViewController` class for video editing.
+* [VideoEditorSDK] Added a `VideoEditPreviewController` class for previewing videos.
+* [VideoEditorSDK] Added a `TrimToolController` class for trimming videos.
+
+### Changed
+
+* [ImglyKit] `PhotoEditPreviewControllerDelegate` was renamed to `MediaEditPreviewControllerDelegate` together with all method names of the protocol.
+* [ImglyKit] The camera does not automatically present the editor any longer when neither `dataCompletionBlock` nor `completionBlock` was specified. You should always set `CameraViewController.dataCompletionBlock`, `CameraViewController.completionBlock` and `CameraViewController.cancelBlock`.
+* [ImglyKit] Video recordings that were created with the camera no longer include the applied filter. To restore the old behavior set `CameraViewControllerOptions.writeVideoWithFilterApplied` to `true`.
+* [ImglyKit] `Bundle.pesdkBundle` was renamed to `Bundle.imglyBundle`.
+* [ImglyKit] `MainFlowController.photoEditViewController` was renamed to `MainFlowController.mediaEditViewController`.
+* [PhotoEditorSDK] The `PhotoEditViewController` initializer doesn't have a `menuItems` parameter any longer. To update the menu items, please use `PhotoEditViewControllerOptions.menuItems`.
+* [PhotoEditorSDK] The `PhotoEditViewController` is a subclass of `MediaEditViewController` now.
+* [PhotoEditorSDK] The `PhotoEditPreviewController` is a subclass of `MediaEditPreviewController` now.
+* [PhotoEditorSDK] The `PhotoEditViewControllerDelegate` protocol now inherits from the `MediaEditViewControllerDelegate`, which brings the following changes:
+	* `photoEditViewController(_ photoEditViewController: PhotoEditViewController, willPresentToolController toolController: PhotoEditToolController)` is now `mediaEditViewController(_ mediaEditViewController: MediaEditViewController, willPresentToolController toolController: PhotoEditToolController)`,
+	* `photoEditViewController(_ photoEditViewController: PhotoEditViewController, didPresentToolController toolController: PhotoEditToolController)` is now `mediaEditViewController(_ mediaEditViewController: MediaEditViewController, didPresentToolController toolController: PhotoEditToolController)`,
+	* `photoEditViewController(_ photoEditViewController: PhotoEditViewController, willDismissToolController toolController: PhotoEditToolController)` is now `mediaEditViewController(_ mediaEditViewController: MediaEditViewController, willDismissToolController toolController: PhotoEditToolController)`,
+	* `photoEditViewController(_ photoEditViewController: PhotoEditViewController, didDismissToolController toolController: PhotoEditToolController)` is now `mediaEditViewController(_ mediaEditViewController: MediaEditViewController, didDismissToolController toolController: PhotoEditToolController)`.
+* [PhotoEditorSDK] `PhotoEditViewControllerOptions.configurePhotoEditorViewController(_:)` was renamed to `PhotoEditViewControllerOptions.configurePhotoEditViewController(_:)`.
+
+### Removed
+
+* [PhotoEditorSDK] Removed all deprecated classes and methods. 
+
 ## [9.8.3]
 
 ### Fixed
