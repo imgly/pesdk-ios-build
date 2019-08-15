@@ -1,3 +1,11 @@
+## [10.0.1]
+
+### Fixed
+
+* [ImglyKit] Fixed a crash on iOS 12.1 and below.
+* [ImglyKit] Fixed sprites being misplaced in the transform and frame tools.
+* [VideoEditorSDK] Fixed an issue where the video would not stop playing while in a color tool controller.
+
 ## [10.0.0]
 
 The `PhotoEditorSDK.framework` was split into two frameworks, `ImglyKit.framework` and `PhotoEditorSDK.framework`:
