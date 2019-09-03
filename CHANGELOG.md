@@ -1,3 +1,15 @@
+## [10.1.0]
+
+### Added
+
+* [ImglyKit] Added `Theme.dynamic`. This theme switches dynamically between the predefined light and dark theme based on the active `UITraitCollection.userInterfaceStyle` (iOS 13 "Dark Mode").
+
+### Fixed
+
+* [ImglyKit] Fixed tint color in `FontSelectorViewController` for the handle button and the selected font when set via the theme.
+* [ImglyKit] Fixed `MediaEditViewControllerOptions.actionButtonConfigurationClosure` not being called.
+* [ImglyKit] Fixed race condition for remote asset downloads.
+
 ## [10.0.1]
 
 ### Fixed
