@@ -1,3 +1,13 @@
+## [10.2.0]
+
+### Changed
+
+* [ImglyKit] Built with Swift 5.1 / Xcode 11.0.
+
+### Fixed
+
+* [ImglyKit] Fixed brush not shown in transform and frame tool.
+
 ## [10.1.0]
 
 ### Added
