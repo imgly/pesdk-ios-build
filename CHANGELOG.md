@@ -1,3 +1,25 @@
+## [10.3.0]
+
+### Changed
+
+* [ImglyKit] Default sticker category identifiers were changed for cross-platform compatibility and consistency with filter categories. `pesdk_sticker_asset_emoticonsStickerCategory` was changed to `imgly_sticker_category_emoticons` and `pesdk_sticker_asset_shapesStickerCategory` was changed to `imgly_sticker_category_shapes`.
+
+### Added
+
+* [ImglyKit] Added `AssetCatalog` to configure all assets that are available to an editor instance for editing tasks. Per default the `shared` instance is used. Use the `Configuration` to setup the asset catalog. `StickerCategory.all`, `Frame.all`, `Effect.all`, `Overlay.all`, `FontImporter.all`, and `TextDesign.all` can still be used but these calls are redirected to `AssetCatalog.shared` internally.
+
+### Fixed
+
+* [ImglyKit] Fixed sticker icon resizing based on `StickerToolControllerOptions.stickerPreviewSize`.
+* [ImglyKit] Fixed broken alpha channel of `imgly_frame_wood_passepartout_thumbnail.png` for source distribution via podspec.
+* [ImglyKit] Fixed an issue that caused the last used sticker category to not being reselected when adding another sticker.
+
+## [10.2.1]
+
+### Fixed
+
+* [ImglyKit] Fixed Metal compiler flags in podspec for source distribution.
+
 ## [10.2.0]
 
 ### Changed
