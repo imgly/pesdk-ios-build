@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IOS-Build">
+	<a href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build">
 		<img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/>
 	</a>
 </p>
@@ -32,21 +32,21 @@ Additionally we support adding stickers and text in a non-destructive manner, wh
 * Fast: Our renderer uses hardware acceleration and the GPU, which makes it lightning fast.
 
 <p>
-	<a target="_blank" href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IOS-Build">
-		<img style="display:block" src="http://docs.photoeditorsdk.com/assets/images/guides/ios/v7/product.jpg?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IOS-Build">
+	<a target="_blank" href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build">
+		<img style="display:block" src="http://docs.photoeditorsdk.com/assets/images/guides/ios/v7/product.jpg?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build">
 	</a>
 </p>
 
 ## Integration
 
-For a step-by-step guide to integrate PhotoEditor SDK, please visit [docs.photoeditorsdk.com/guides/ios](https://docs.photoeditorsdk.com/guides/ios/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=IOS-Build).
+For a step-by-step guide to integrate PhotoEditor SDK, please visit [docs.photoeditorsdk.com/guides/ios](https://docs.photoeditorsdk.com/guides/ios/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build).
 
 ## License Terms
 
-Make sure you have a commercial license before releasing your app.
+Make sure you have a [commercial license](https://www.https://account.photoeditorsdk.com/pricing?product=pesdk?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build) before releasing your app.
 A commercial license is required for any app or service that has any form of monetization: This includes free apps with in-app purchases or ad supported applications. Please contact us if you want to purchase the commercial license.
 
 
 ## Support and License
 
-Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.photoeditorsdk.com/pricing) on our website.
+Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.https://account.photoeditorsdk.com/pricing?product=pesdk?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build) on our website.
