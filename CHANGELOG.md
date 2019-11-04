@@ -1,3 +1,17 @@
+## [10.4.0]
+
+### Changed
+
+* [ImglyKit] Built with Swift 5.1.2 / Xcode 11.2.
+
+### Added
+
+* [ImglyKit] Added option to add personal stickers from the camera roll via `UIImagePickerController`. This feature is disabled by default and can be configured with `StickerToolControllerOptions`. If the same `AssetCatalog` is used for multiple editor instances and/or for de-/serialization added personal stickers will accumulate in this single `AssetCatalog` instance which is `AssetCatalog.shared` per default. In order to remove all added personal stickers use `AssetCatalog.removeTemporaryItems()` or create a new `AssetCatalog` for every editing session.
+
+### Fixed
+
+* [ImglyKit] Fixed orientation of assets with EXIF metadata.
+
 ## [10.3.0]
 
 ### Changed
