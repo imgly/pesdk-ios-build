@@ -1,8 +1,26 @@
+## [10.5.0]
+
+### Changed
+
+* Built with Swift 5.1.2 / Xcode 11.2.1.
+
+### Added
+
+* [ImglyKit] Added configuration option `MediaEditViewControllerOptions.navigationControllerMode` to keep the `Toolbar` if the `MediaEditViewController` or one of its ancestors is a child of a `UINavigationController`.
+
+### Deprecated
+
+* [ImglyKit] Deprecated `MediaEditViewControllerOptions.useParentNavigationItem` in favor of `MediaEditViewControllerOptions.navigationControllerMode`.
+
+### Fixed
+
+* [ImglyKit] Fixed background color of the menu accessory view to use the `Theme.menuBackgroundColor`. This issue could result in a black gap at the bottom of the screen if the menu accessory view extended below the bottom `safeAreaLayoutGuide`, e.g., when the `MediaEditViewController` was embedded in a `UINavigationController`.
+
 ## [10.4.0]
 
 ### Changed
 
-* [ImglyKit] Built with Swift 5.1.2 / Xcode 11.2.
+* Built with Swift 5.1.2 / Xcode 11.2.
 
 ### Added
 
@@ -38,7 +56,7 @@
 
 ### Changed
 
-* [ImglyKit] Built with Swift 5.1 / Xcode 11.0.
+* Built with Swift 5.1 / Xcode 11.0.
 
 ### Fixed
 
