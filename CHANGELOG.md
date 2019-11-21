@@ -1,3 +1,17 @@
+## [10.6.0]
+
+### Changed
+
+* [PhotoEditorSDK] Restricted access level of `PhotoEditViewController.options` to `public` in order to prevent overrides which would likely cause unexpected behavior.
+* [VideoEditorSDK] Restricted access level of `VideoEditViewController.options` to `public` in order to prevent overrides which would likely cause unexpected behavior.
+
+### Fixed
+
+* [ImglyKit] Fixed animation of the media capturing buttons in the `CameraViewController` when switching the capturing mode from photo to video and vice versa.
+* [ImglyKit] Fixed slider in the sticker tool which was not updated when multiple stickers with different opacity, brightness, contrast, or saturation values were edited one after the other.
+* [ImglyKit] Fixed image preview for the iOS Simulator with Metal support (iOS 13 Simulator running on macOS 10.15) which let to the preview image being displayed upside down.
+* [ImglyKit] Fixed image preview in the transform and frame tool for the iOS Simulator with Metal support (iOS 13 Simulator running on macOS 10.15) which let to the display of an empty canvas.
+
 ## [10.5.0]
 
 ### Changed
