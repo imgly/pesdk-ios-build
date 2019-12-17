@@ -1,3 +1,17 @@
+## [10.7.0]
+
+### Changed
+
+* Built with Swift 5.1.3 / Xcode 11.3.
+
+### Fixed
+
+* [ImglyKit] Added a public initializer for `PhotoEditRenderer` that's accessible with Objective-C.
+* [ImglyKit] Fixed Objective-C compatibility of `SpriteModel`.
+* [ImglyKit] Fixed `CGFloat?` properties not being exposed to Objective-C by converting them to `NSNumber?`.
+* [ImglyKit] Fixed rotational snapping of sprites which led to misaligned snapping angles and guides after the image has been rotated with the transform tool.
+* [ImglyKit] Fixed `FrameOptionsToolControllerOptions.allowedFrameActions` not being accessible from Objective-C.
+
 ## [10.6.0]
 
 ### Changed
