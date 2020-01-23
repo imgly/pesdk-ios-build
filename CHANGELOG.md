@@ -1,3 +1,16 @@
+## [10.7.1]
+
+### Changed
+
+* Built with Swift 5.1.3 / Xcode 11.3.1.
+
+### Fixed
+
+* [ImglyKit] Fixed overwriting of configuration options when calling a `ConfigurationBuilder.configure*` closure more than once. Existing configuration options are now passed to successive invocations.
+* [ImglyKit] Fixed text tool and text design tool which would remain active even if the text was deleted.
+* [ImglyKit] Fixed switching the camera mode too fast would lead to the blur view appearing permanently and thereby disabling the camera functionality.
+* [VideoEditorSDK] Fixed an issue where the frame options tool would show the wrong video frame when playback is paused.
+
 ## [10.7.0]
 
 ### Changed
@@ -23,8 +36,8 @@
 
 * [ImglyKit] Fixed animation of the media capturing buttons in the `CameraViewController` when switching the capturing mode from photo to video and vice versa.
 * [ImglyKit] Fixed slider in the sticker tool which was not updated when multiple stickers with different opacity, brightness, contrast, or saturation values were edited one after the other.
-* [ImglyKit] Fixed image preview for the iOS Simulator with Metal support (iOS 13 Simulator running on macOS 10.15) which let to the preview image being displayed upside down.
-* [ImglyKit] Fixed image preview in the transform and frame tool for the iOS Simulator with Metal support (iOS 13 Simulator running on macOS 10.15) which let to the display of an empty canvas.
+* [ImglyKit] Fixed image preview for the iOS Simulator with Metal support (iOS 13 Simulator running on macOS 10.15) which led to the preview image being displayed upside down.
+* [ImglyKit] Fixed image preview in the transform and frame tool for the iOS Simulator with Metal support (iOS 13 Simulator running on macOS 10.15) which led to the display of an empty canvas.
 
 ## [10.5.0]
 
