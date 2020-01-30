@@ -1,3 +1,11 @@
+## [10.7.2]
+
+### Fixed
+
+* [ImglyKit] Increased the touch area of the color picker controls which were difficult to use at the borders of the color selection views.
+* [ImglyKit] Fixed default ordering of the frames for cross-platform consistency.
+* [ImglyKit] Fixed accidental drawing while using the color picker in the `BrushColorToolController`.
+
 ## [10.7.1]
 
 ### Changed
