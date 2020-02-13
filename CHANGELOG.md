@@ -1,3 +1,15 @@
+## [10.7.3]
+
+### Changed
+
+* [ImglyKit] Changed `UICollectionViewDelegate` methods implemented by `StickerSelectionController` to `open` instead of `public`.
+
+### Fixed
+
+* [ImglyKit] Fixed infinite layout loop when rotating an inverted text design on iOS 13.
+* [ImglyKit] Fixed class replacement not working for `BlendModeCollectionViewCell` and `StickerCollectionViewCell`.
+* [ImglyKit] Fixed misplaced sticker bounding box when switching from opacity to color editing mode of a sticker.
+
 ## [10.7.2]
 
 ### Fixed
