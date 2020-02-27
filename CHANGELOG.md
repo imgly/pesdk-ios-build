@@ -1,3 +1,10 @@
+## [10.7.4]
+
+### Fixed
+
+* [ImglyKit] Added missing localizable strings for filter groups.
+* [ImglyKit] Fixed focus operation not being centered when the focus tool is applied to a cropped image.
+
 ## [10.7.3]
 
 ### Changed
