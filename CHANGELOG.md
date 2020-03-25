@@ -1,3 +1,14 @@
+## [10.8.0]
+
+### Changed
+
+* Built with Swift 5.2 / Xcode 11.4.
+
+### Fixed
+
+* [VideoEditorSDK] Fixed initial position of the video position seeker when the playback is paused and the trim tool is entered.
+* [ImglyKit] Fixed `StickerToolControllerOptions.titleViewConfigurationClosure` not being called for the selected sticker category.
+
 ## [10.7.4]
 
 ### Fixed
