@@ -1,3 +1,21 @@
+## [10.9.0]
+
+### Changed
+
+* [ImglyKit] 🚨 `ConfigurationBuilder.configure(from:)` methods don't parse the tile configurations for `LUTFilter` objects from the `lutURI` filename anymore and the default changed from a 8x8 to a 5x5 tile configuration.
+* [ImglyKit] Added `@available(iOS 11.0, *)` restriction to `ImageFileFormat.heif` as this has always been noted in the API docs but was not enforced by the compiler.
+
+### Added
+
+* [ImglyKit] Added `LUTEffect` initializer for specific tile configurations that does not parse its URL for tile configurations.
+* [ImglyKit] Added `Configuration.appearanceProxyConfigurationClosure` intended for custom `UIAppearance` proxy calls.
+* [ImglyKit] Enabled `SnapGuideView` properties for `UIAppearance` proxy calls.
+* [ImglyKit] Added snap guide colors to the `Theme`.
+
+### Fixed
+
+* [ImglyKit] Added a workaround that fixes black image exports with the iOS 13.4 Simulator in general and all iOS 13.x Simulators running on macOS 10.15.4. Exports of images larger than 4096^2 are still failing to render on the aforementioned iOS Simulator configurations. On real devices everything works as expected.
+
 ## [10.8.0]
 
 ### Changed
@@ -199,7 +217,7 @@ A new `VideoEditorSDK.framework` was introduced, that uses the same `ImglyKit.fr
 
 ### Removed
 
-* [PhotoEditorSDK] Removed all deprecated classes and methods. 
+* [PhotoEditorSDK] Removed all deprecated classes and methods.
 
 ## [9.8.3]
 
@@ -391,8 +409,8 @@ A new `VideoEditorSDK.framework` was introduced, that uses the same `ImglyKit.fr
 * The design of the cells in the main menus was slightly changed and unified across tools.
 * The design of the title in the lower toolbar was slightly changed to an all caps label with more character spacing.
 * Updated the Text Design tool to allow adding multiple Text Design objects.
-* Updated the Text Design inversion mechanism so that the user is able to adjust the padding of an inverted Text Design. 
-* Replaced the blend mode selection view in `OverlayToolController` with a button to toggle between available blend modes. 
+* Updated the Text Design inversion mechanism so that the user is able to adjust the padding of an inverted Text Design.
+* Replaced the blend mode selection view in `OverlayToolController` with a button to toggle between available blend modes.
 * Multiple icons were replaced across the SDK.
 * Instead of passing an array of `UIColor` objects and an array of matching `String` objects, describing the name of the color, the SDK now expects an array of `Color` objects.
 * The default hardness of a new brush stroke was changed from `1.0` to `0.5`.
@@ -604,7 +622,7 @@ A new `VideoEditorSDK.framework` was introduced, that uses the same `ImglyKit.fr
 ### Changed
 
 * Built with Swift 4.1 / Xcode 9.3.
-* Switched from `Float` to `Double` in all photo edit and serialization models, because converting an `NSNumber` implicitly to `Float` (e.g. `NSNumber(0.26) as? Float`) returns `nil` with Swift 4.1 if it can't be represented exactly by a float. 
+* Switched from `Float` to `Double` in all photo edit and serialization models, because converting an `NSNumber` implicitly to `Float` (e.g. `NSNumber(0.26) as? Float`) returns `nil` with Swift 4.1 if it can't be represented exactly by a float.
 * When updating `StickerCategory.all` while the sticker selection tool is visible, it now automatically reloads the available categories and stickers.
 
 ### Fixed
@@ -629,7 +647,7 @@ A new `VideoEditorSDK.framework` was introduced, that uses the same `ImglyKit.fr
 * Fixed an issue where the flash icon would not be visible while the camera was in video mode.
 * Fixed an issue where all Objective-C bridged `SpriteModel`s were of type `PESDKSpriteModel` instead of their concrete subclasses.
 * Fixed an issue with the toolbar having the wrong size while the keyboard was active on an iPhone X.
-* Fixed an issue where focus would not work in the camera after switching from back to front camera. 
+* Fixed an issue where focus would not work in the camera after switching from back to front camera.
 
 ## [8.2.3]
 
