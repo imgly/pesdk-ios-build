@@ -1,3 +1,19 @@
+## [10.10.0]
+
+### Changed
+
+* Built with Swift 5.2.2 / Xcode 11.4.1
+* [ImglyKit] Changed the initial minimum font size for text added with the text tool to `20.0`. In order to return to the old default value and line break behavior set `TextToolControllerOptions.minimumTextSize` to `1.0`.
+
+### Added
+
+* [ImglyKit] Added `TextToolControllerOptions.minimumTextSize` to configure the initial minimum font size for text added with the text tool which affects the automatic line break behavior.
+
+### Fixed
+
+* [ImglyKit] Fixed adding personal stickers would lead to the toolbar being hidden beneath the keyboard in the text and text design tool for iOS versions older than 13.0.
+* [ImglyKit] Added a workaround that fixes wrong layout of the navigation bar for iOS 13 devices without a notch when a `MediaEditViewController` is embedded into a `UINavigationController` and uses a different `prefersStatusBarHidden` setting as the parent view.
+
 ## [10.9.0]
 
 ### Changed
