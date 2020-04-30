@@ -1,3 +1,13 @@
+## [10.11.0]
+
+### Changed
+
+* [ImglyKit] Changed access level of `Slider.thumbView`, `Slider.leftUnfilledTrackView`, `Slider.rightUnfilledTrackView`, and `Slider.filledTrackView` to `open` in order to allow further customization within subclasses of `Slider`.
+
+### Added
+
+* [ImglyKit] Added `UIAppearance` proxy support for `Slider.trackHeight`, `Slider.trackCornerRadius`, and `Slider.thumbSize`.
+
 ## [10.10.0]
 
 ### Changed
