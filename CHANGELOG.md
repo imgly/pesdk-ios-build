@@ -1,3 +1,17 @@
+## [10.12.0]
+
+### Changed
+
+* [ImglyKit] Changed access level of `AdjustEditController.updateSlider` to `open` in order to allow further customization within subclasses.
+
+### Added
+
+* [ImglyKit] Added `MenuCollectionViewCell.cornerRadius` and `MenuCollectionViewCell.selectionBorderWidth` which allow customization via `UIAppearance` proxy calls.
+
+### Fixed
+
+* [ImglyKit] Fixed force cropping could be undone.
+
 ## [10.11.0]
 
 ### Changed
