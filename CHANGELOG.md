@@ -1,3 +1,9 @@
+## [10.13.0]
+
+### Changed
+
+* Built with Swift 5.2.4 / Xcode 11.5
+
 ## [10.12.0]
 
 ### Changed
