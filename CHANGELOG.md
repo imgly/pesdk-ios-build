@@ -1,3 +1,12 @@
+## [10.13.1]
+
+### Fixed
+
+* [VideoEditorSDK] Fixed missing intermediate directories were not created for export filename.
+* [ImglyKit] Fixed static frames would not appear or lead to crash.
+* [ImglyKit] Fixed dynamic frames would lead to crash if not all patches have been set.
+* [ImglyKit] Fixed `error: Couldn't IRGen expression, no additional error` when using the `lldb` console.
+
 ## [10.13.0]
 
 ### Changed
