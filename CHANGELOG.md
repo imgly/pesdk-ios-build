@@ -1,3 +1,14 @@
+## [10.14.0]
+
+### Added
+
+* [VideoEditorSDK] Added support for animated GIF stickers. Sticker adjustments (brightness, contrast, saturation) and non-default tint modes are not supported for animated stickers.
+
+### Fixed
+
+* [VideoEditorSDK] Fixed video playback to start at trimmed start position when loading a `PhotoEditModel` or serialization.
+* [VideoEditorSDK] Fixed crash for videos with invalid audio.
+
 ## [10.13.1]
 
 ### Fixed
