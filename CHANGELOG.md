@@ -1,3 +1,21 @@
+## [10.15.0]
+
+### Changed
+
+* [ImglyKit] Changed access level of `CameraViewController`'s `UIImagePickerControllerDelegate` implementation to `open` in order to allow further customization within subclasses.
+* [VideoEditorSDK] The original URL of the input video is now returned by the `VideoEditViewControllerDelegate` instead of `nil` when exporting an unedited video in order to align the behavior with PhotoEditorSDK.
+
+### Added
+
+* [ImglyKit] Added `TextToolControllerOptions.maximumTextSize` to configure the maximum initial font size for text added within the text tool.
+* [ImglyKit] Added missing analytics events for adding, selecting, and removing text designs.
+* [ImglyKit] Added `CameraController.cameraPosition` to determine the active camera position.
+
+### Fixed
+
+* [ImglyKit] Fixed subclassing of `TextToolController`, `TextDesignToolController`, `BrushColorToolController`, `StickerGestureController`, `StickerColorToolController`, `StickerEditController`, `TextGestureController`, `TextColorToolController`, and `TextDesignGestureController` which caused undefined symbols for `_OBJC_METACLASS_` errors.
+* [ImglyKit] Fixed image picker in camera would allow selecting media types that are not included in the `CameraViewControllerOptions.allowedRecordingModes`.
+
 ## [10.14.0]
 
 ### Added
