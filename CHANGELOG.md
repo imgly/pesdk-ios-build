@@ -1,3 +1,13 @@
+## [10.15.1]
+
+### Changed
+
+* Built with Swift 5.2.4 / Xcode 11.6
+
+### Fixed
+
+* [VideoEditorSDK] Fixed video playback was not paused when exporting an unedited video.
+
 ## [10.15.0]
 
 ### Changed
