@@ -1,3 +1,9 @@
+## [10.16.0]
+
+### Added
+
+* [VideoEditorSDK] Added new GIF sticker category and stickers.
+
 ## [10.15.1]
 
 ### Changed
