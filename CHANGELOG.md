@@ -1,3 +1,15 @@
+## [10.17.0]
+
+### Changed
+
+* [ImglyKit] Changed the displayed sticker category name from "Emoticons" to "Stickers".
+
+### Added
+
+* [ImglyKit] Added `ToolbarButton.width` which allows to configure a custom width for the toolbar buttons.
+* [ImglyKit] Added new `MultiImageSticker` which allows to have multiple variations of a sticker that can be cycled by tapping the sticker on the canvas.
+* [ImglyKit] Added new `SmartSticker`s for weekday, date, time, and clock as first items to the first sticker category.
+
 ## [10.16.0]
 
 ### Added
