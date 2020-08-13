@@ -1,3 +1,13 @@
+## [10.18.0]
+
+### Added
+
+* [ImglyKit] Added new `SmartSticker`s for weather to the first sticker category. These are hidden per default when `StickerToolControllerOptions.weatherProvider` is not set. You can use the `OpenWeatherProvider` or implement your own `WeatherProvider`.
+
+### Fixed
+
+* [ImglyKit] Fixed unlocalized string for key `pesdk_smart_sticker_clock` warning.
+
 ## [10.17.0]
 
 ### Changed
