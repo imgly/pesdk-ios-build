@@ -1,3 +1,19 @@
+## [10.19.0]
+
+### Changed
+
+* Enabled library evolution and module stability which allows to use the SDK from now on with any Xcode 11+ (beta) version.
+* [VideoEditorSDK] Selecting sprites won't pause video playback anymore to align behavior with Android. In order to restore the old behavior override `wantsVideoPlayback` of `BrushEditController`, `StickerEditController`, `TextDesignOptionsToolController`, `TextFontToolController`, and `TextOptionsToolController`.
+
+### Added
+
+* Added experimental XCFramework and Swift Package Manager (SPM) support.
+
+### Fixed
+
+* [ImglyKit] Fixed silent force crop behavior when `TransformToolControllerOptions.allowFreeCrop` and `MediaEditViewControllerOptions.forceCropMode` are both `false` where the asset would not be automatically cropped to the best matching aspect if its size would not fit one of the `TransformToolControllerOptions.allowedCropAspects`.
+* [ImglyKit] Fixed that the time label would be hidden when specifying `.video` as the first item in `CameraViewControllerOptions.allowedRecordingModes`.
+
 ## [10.18.0]
 
 ### Added
