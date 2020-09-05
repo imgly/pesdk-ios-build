@@ -1,3 +1,10 @@
+## [10.19.1]
+
+### Fixed
+
+* [ImglyKit] Fixed issue where the renderer has not been updating the preview correctly when changing the `MediaEditPreviewController.photoEditModel` in a way that more than only the sprite models have been changed at the same time.
+* [ImglyKit] Improved timely weather data by requesting an update when the editor is about to appear for `WeatherProvider`'s that outlive editor invocations.
+
 ## [10.19.0]
 
 ### Changed
