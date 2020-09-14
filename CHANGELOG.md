@@ -1,3 +1,18 @@
+## [10.20.0]
+
+### Changed
+
+* Built with Swift 5.2.4 / Xcode 11.7
+* [ImglyKit] Changed `.bringToFront` overlay buttons are now disabled when the selected sprite is already on top.
+
+### Added
+
+* [ImglyKit] Added `CameraViewControllerOptions.allowedRecordingOrientations` which allow to specify the orientations in which the camera should record.
+
+### Fixed
+
+* [ImglyKit] Fixed issue where the camera roll button would not be visible in the `CameraViewController` when recording a video.
+
 ## [10.19.1]
 
 ### Fixed
