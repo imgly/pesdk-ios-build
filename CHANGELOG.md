@@ -1,3 +1,9 @@
+## [10.21.0]
+
+### Added
+
+* [ImglyKit] Added H264 video codec initializer with the option to specify a `VideoCodecProfileH264`.
+
 ## [10.20.0]
 
 ### Changed
