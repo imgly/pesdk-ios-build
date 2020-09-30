@@ -1,3 +1,9 @@
+## [10.21.1]
+
+### Changed
+
+* [ImglyKit] Replaced several fonts with new fonts and added additional new fonts.
+
 ## [10.21.0]
 
 ### Added
