@@ -1,3 +1,10 @@
+## [10.21.2]
+
+### Fixed
+
+* [ImglyKit] Fixed issue where rotating a text design would lead to a crash.
+* [ImglyKit] Fixed menu in the transform tool not being aligned with the selected crop aspect when inverting the crop aspect or rotating the asset.
+
 ## [10.21.1]
 
 ### Changed
