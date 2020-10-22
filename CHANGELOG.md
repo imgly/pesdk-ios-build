@@ -1,3 +1,13 @@
+## [10.21.3]
+
+### Added
+
+* [VideoEditorSDK] Added `VideoEditViewController.play()` and `VideoEditViewController.pause()` which allow to control the video playback.
+
+### Fixed
+
+* [ImglyKit] Fixed a crash when loading smart stickers using a basic license.
+
 ## [10.21.2]
 
 ### Fixed
