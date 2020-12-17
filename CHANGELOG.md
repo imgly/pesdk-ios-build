@@ -1,3 +1,13 @@
+## [10.21.4]
+
+### Added
+
+* [ImglyKit] Added `TextToolControllerOptions.defaultTextAlignment` to specify the initial alignment of newly added text.
+
+### Fixed
+
+* [ImglyKit] Fixed a bug where `startTime` and `endTime` of a `TrimModel` were not exposed to Objective-C.
+
 ## [10.21.3]
 
 ### Added
