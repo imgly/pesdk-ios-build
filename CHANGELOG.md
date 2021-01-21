@@ -1,3 +1,14 @@
+## [10.21.5]
+
+### Added
+
+* [ImglyKit] Added `StickerToolControllerOptions.personalStickerCustomizationClosure` to customize personal stickers.
+
+### Fixed
+
+* [VideoEditorSDK] Fixed a bug where `VideoEditViewControllerDelegate.videoEditViewControllerDidFailToGenerateVideo` has not been called in case that the export background task has been ended by the operating system.
+* [VideoEditorSDK] Fixed crash for some videos with invalid audio.
+
 ## [10.21.4]
 
 ### Added
