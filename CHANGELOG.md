@@ -1,3 +1,9 @@
+## [10.21.6]
+
+### Fixed
+
+* [VideoEditorSDK] Fixed a crash when transforming videos that are flipped vertically and horizontally.
+
 ## [10.21.5]
 
 ### Added
