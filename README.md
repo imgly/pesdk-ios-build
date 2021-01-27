@@ -4,11 +4,17 @@
 	</a>
 </p>
 <p align="center">
+	<a href="https://swiftpackageindex.com/imgly/pesdk-ios-build">
+		<img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fimgly%2Fpesdk-ios-build%2Fbadge%3Ftype%3Dplatforms" alt="Swift Package Manager Compatible">
+	</a>
+	<a href="https://swiftpackageindex.com/imgly/pesdk-ios-build">
+		<img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fimgly%2Fpesdk-ios-build%2Fbadge%3Ftype%3Dswift-versions" alt="Swift Package Manager Compatible">
+	</a>
 	<a href="https://cocoapods.org/pods/PhotoEditorSDK">
-		<img src="https://img.shields.io/cocoapods/v/PhotoEditorSDK.svg" alt="CocoaPods Compatible">
+		<img src="https://img.shields.io/cocoapods/v/PhotoEditorSDK.svg?label=Pod" alt="CocoaPods Compatible">
 	</a>
 	<a href="http://twitter.com/PhotoEditorSDK">
-		<img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-blue.svg?style=flat" alt="Twitter">
+		<img src="https://img.shields.io/badge/twitter-@PhotoEditorSDK-blue.svg?label=Twitter&style=flat" alt="Twitter">
 	</a>
 </p>
 
