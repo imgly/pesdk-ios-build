@@ -55,4 +55,4 @@ A commercial license is required for any app or service that has any form of mon
 
 ## Support and License
 
-Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.https://account.photoeditorsdk.com/pricing?product=pesdk?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build) on our website.
+Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://account.photoeditorsdk.com/pricing?product=pesdk?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build) on our website.
