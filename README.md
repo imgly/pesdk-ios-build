@@ -49,7 +49,7 @@ For a step-by-step guide to integrate PhotoEditor SDK, please visit [docs.photoe
 
 ## License Terms
 
-Make sure you have a [commercial license](https://www.https://account.photoeditorsdk.com/pricing?product=pesdk?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build) before releasing your app.
+Make sure you have a [commercial license](https://account.photoeditorsdk.com/pricing?product=pesdk?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build) before releasing your app.
 A commercial license is required for any app or service that has any form of monetization: This includes free apps with in-app purchases or ad supported applications. Please contact us if you want to purchase the commercial license.
 
 
