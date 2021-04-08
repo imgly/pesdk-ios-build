@@ -1,3 +1,18 @@
+## [10.22.0]
+
+### Changed
+
+* [ImglyKit] Changed default blend mode for `imgly_overlay_vintage` to `overlay` for cross-platform consistency.
+
+### Added
+
+* [PhotoEditorSDK] Added factory methods `PhotoEditViewController.makePhotoEditViewController` and `[PESDKPhotoEditViewController photoEditViewControllerWith...]` that also create a replacement subclass if there is a replacing class defined by `PESDK.replaceClass`.
+* [VideoEditorSDK] Added factory methods `VideoEditViewController.makeVideoEditViewController` and `[PESDKVideoEditViewController photoEditViewControllerWith...]` that also create a replacement subclass if there is a replacing class defined by `VESDK.replaceClass`.
+
+### Fixed
+
+* [ImglyKit] Fixed `OverlayButton`s being misaligned when using Right-To-Left languages.
+
 ## [10.21.6]
 
 ### Fixed

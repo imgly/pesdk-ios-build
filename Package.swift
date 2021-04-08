@@ -8,7 +8,7 @@ let package = Package(
     .library(name: "PhotoEditorSDK", targets: ["PhotoEditorSDK"]),
   ],
   dependencies: [
-    .package(name: "ImglyKit", url: "https://github.com/imgly/imglykit-sp.git", .exact("10.21.6"))
+    .package(name: "ImglyKit", url: "https://github.com/imgly/imglykit-sp.git", .exact("10.22.0"))
   ],
   targets: [
     .target(
