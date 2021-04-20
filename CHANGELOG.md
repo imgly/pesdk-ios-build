@@ -1,3 +1,23 @@
+## [10.23.0]
+
+### Added
+
+* [VideoEditorSDK] Added composition tool for creating video compositions from multiple video clips.
+* [VideoEditorSDK] Added play/pause overlay button to the `VideoEditViewController`.
+* [VideoEditorSDK] Added sound on/off overlay button to the `VideoEditViewController` which mutes and unmutes the audio in the preview player and removes the audio track for exported videos if audio was muted in the preview.
+
+### Changed
+
+* [VideoEditorSDK] Changed default trim tool UI to make use of overlay controls and tooltips for time labels. Set `TrimToolControllerOptions.useOverlayControls` to `false` in order to preserve the old UI.
+* [VideoEditorSDK] Changed default timeline thumbnail size in the trim tool from 2/3 to 9/16 as this better fits common portrait videos. Set `VideoTrimView.thumbnailWidth` to `40` in order to preserve the old size.
+
+### Fixed
+
+* [VideoEditorSDK] Fixed video timeline thumbnails in the trim tool that were not clipped and thus overlapped each other for landscape videos.
+* [VideoEditorSDK] Fixed animated stickers are in some cases not paused in the preview when the video is paused.
+* [ImglyKit] Fixed analytics events for undo and redo operations in the adjustment tool.
+* [ImglyKit] Fixed `ToolbarButton` disabled control state style which used an alpha value of `0.2` but should have been `0.4`. 
+
 ## [10.22.0]
 
 ### Changed
