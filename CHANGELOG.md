@@ -1,3 +1,9 @@
+## [10.23.1]
+
+### Fixed
+
+* [ImglyKit] Fixed module interface compiler error.
+
 ## [10.23.0]
 
 ### Added
