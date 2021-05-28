@@ -1,3 +1,19 @@
+## [10.24.0]
+
+### Added
+
+* [VideoEditorSDK] Added video clip library for adding predefined video clips to video compositions.
+* [VideoEditorSDK] Added audio tool for adding overlay audio tracks to the edited video.
+
+### Fixed
+
+* [ImglyKit] Fixed occasional weird scrolling behavior of the angle picker in the transform tool by disabling the invisible vertical and horizontal scroll indicators of the `ScalePicker`.
+* [PhotoEditorSDK] Fixed image adjustments could result in clipped sprites for images with transparent background on devices with Apple A9 SoCs.
+* [VideoEditorSDK] Fixed green artifacts in dark regions of video compositions on devices with Apple A9 SoCs.
+* [VideoEditorSDK] Fixed `Theme.tintColor` was not applied to `VideoTrimSelectionView`.
+* [VideoEditorSDK] Fixed loading issue for videos where the video track id was different from `1` which caused an empty preview and a crash when `TransformToolControllerOptions.allowFreeCrop` was disabled.
+* [VideoEditorSDK] Fixed an issue where assets such as stickers or text would not be placed correctly on videos.
+
 ## [10.23.1]
 
 ### Fixed
