@@ -1,3 +1,13 @@
+## [10.25.0]
+
+### Added
+
+* [ImglyKit] Added an opt-out for emoji support because it is not optimized for cross-platform use. It can be disabled with `TextToolControllerOptions.emojisEnabled` and `TextDesignToolControllerOptions.emojisEnabled`.
+
+### Changed
+
+* Updated podspecs to use XCFramework releases instead of fat frameworks which requires CocoaPods version 1.10.0+.
+
 ## [10.24.0]
 
 ### Added
