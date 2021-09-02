@@ -1,3 +1,17 @@
+## [10.26.0]
+
+### Added
+
+* [ImglyKit] Added support for custom localization files.
+* [VideoEditorSDK] Added basic remote asset support for audio and video clip library. Assets are not cached! It's mainly intended for React Native debug builds which will generate temporary remote URLs for static assets.
+
+### Fixed
+
+* [ImglyKit] Fixed jumping toolbar in the text tool.
+* [ImglyKit] Fixed `tintColor` of `MenuCollectionViewCell.iconImageView` ignored on iOS 15.
+* [ImglyKit] Fixed menu cells would sometimes disappear after transitioning between tools on iOS 15.
+* [ImglyKit] Fixed `PESDKGroup` could not be initialized in Objective-C.
+
 ## [10.25.0]
 
 ### Added
