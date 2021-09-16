@@ -1,3 +1,9 @@
+## [10.26.1]
+
+### Fixed
+
+* [ImglyKit] Fixed `-[PESDKAnimatedImageView displayLayer:]: unrecognized selector sent to instance` crash for iOS 13 and older.
+
 ## [10.26.0]
 
 ### Added
