@@ -1,3 +1,17 @@
+## [10.27.0]
+
+### Added
+
+* [ImglyKit] Added `MediaEditViewControllerOptions.forceExport` which will force the photo/video to be rendered and exported in the defined output format even if no changes have been applied. Otherwise, the input asset will be passed through and might not match the defined output format.
+
+### Deprecated
+
+* [ImglyKit] Deprecated `IMGLY.forceRenderHighResolutionImage`. Use `MediaEditViewControllerOptions.forceExport` instead.
+
+### Fixed
+
+* [ImglyKit] Fixed `Theme.tintColor` was not applied to `AudioTrimSelectionView`.
+
 ## [10.26.1]
 
 ### Fixed
