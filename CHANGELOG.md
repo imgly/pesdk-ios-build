@@ -1,3 +1,23 @@
+## [10.28.0]
+
+### Added
+
+* [VideoEditorSDK] Added serialization support for audio composition.
+* [VideoEditorSDK] Added `minimumDuration` and `maximumDuration` to `TrimToolControllerOptions` in order to restrict the edited video to specific duration limits.
+* [VideoEditorSDK] Added `VideoEditViewControllerOptions.forceTrimMode`, `TrimToolControllerOptions.videoTooShortConfirmationClosure`, and `CompositionToolControllerOptions.compositionTooShortConfirmationClosure` in order to change the behavior when a video does not fit within the duration limits.
+
+### Changed
+
+* [VideoEditorSDK] Improved the UX of the composition and (clip) trim tool timeline, e.g., the player is only temporarily paused while interacting with the timeline.
+* [VideoEditorSDK] Changed the composition and (clip) trim tool timeline to automatically zoom to the current trim selection. The old behavior can be restored by disabling `VideoTrimView.isZoomToSelectionEnabled`.
+* [VideoEditorSDK] Increased the default composition tool timeline height and thumbnail width to match the (clip) trim tool timeline appearance for improved accessibility. Set `VideoTrimView.thumbnailWidth` to `22` when it is contained in a `CompositionEditController` and `CompositionEditController.trimViewHeight` to `64` by subclassing `CompositionToolController` in order to preserve the old size.
+
+### Fixed
+
+* [VideoEditorSDK] Fixed misaligned layout of trim view when the editor is embedded into a `UINavigationController`.
+* [VideoEditorSDK] Fixed slow tooltip updates when dragging start or end time trim handles on iOS 15.
+* [VideoEditorSDK] Fixed waveform in the audio tool was not shown for iOS 11 and earlier.
+
 ## [10.27.0]
 
 ### Added
