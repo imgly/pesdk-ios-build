@@ -1,6 +1,6 @@
 <p align="center">
-	<a href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build">
-		<img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/>
+	<a href="https://img.ly/photo-sdk?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=IOS-Build">
+		<img src="https://img.ly/static/logos/PE.SDK_Logo.svg" alt="PhotoEditor SDK Logo"/>
 	</a>
 </p>
 <p align="center">
