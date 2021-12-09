@@ -1,3 +1,20 @@
+## [10.28.1]
+
+### Fixed
+
+* [ImglyKit] Fixed sprites not visible in transform and frame tool.
+* [ImglyKit] Fixed front/back camera switching UI layout.
+* [ImglyKit] Fixed Japanese/Chinese multistage text input with emoji opt-out.
+* [ImglyKit] Fixed `-0.0` that could be shown for angle adjustments with the `ScalePicker` in the transform tool.
+* [VideoEditorSDK] Fixed `Theme.tintColor` was not applied to `VideoTrimSelectionView` when entering the composition or (clip) trim tool with non-default trim start or end time.
+* [VideoEditorSDK] Fixed missing thumbnails for some videos while trimming to very short durations.
+* [VideoEditorSDK] Fixed scrubber tooltip that could display negative values for some videos.
+* [VideoEditorSDK] Fixed scrubber that could move outside the trim interval for some videos.
+* [VideoEditorSDK] Fixed real end trim time that could not have been selected for some videos.
+* [VideoEditorSDK] Fixed adding personal video clips in the composition tool that could fail to import some videos on iOS 14+. This disables the previously used `PHPickerViewController` in favor of `UIImagePickerController` even on iOS 14+ until a better solution is available.
+* [VideoEditorSDK] Fixed stickers would not be displayed correctly when replaced with animated stickers or when switching between sticker categories containing static as well as animated stickers on iOS 15.
+* [VideoEditorSDK] Fixed video preview stuck on first frame for some videos.
+
 ## [10.28.0]
 
 ### Added
