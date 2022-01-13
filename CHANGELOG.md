@@ -1,3 +1,14 @@
+## [10.28.2]
+
+### Changed
+
+* [VideoEditorSDK] Optimized video compositions.
+
+### Fixed
+
+* [ImglyKit] Fixed special characters being inserted with keyboard dictation while using text input with emoji opt-out.
+* [VideoEditorSDK] Fixed flipping sticker animation while editing a sticker's opacity.
+
 ## [10.28.1]
 
 ### Fixed
