@@ -1,3 +1,17 @@
+## [10.29.0]
+
+### Added
+
+* Added support for SwiftUI. You can now use `PhotoEditor`, `VideoEditor` and `Camera` directly in your SwiftUI applications.
+* [ImglyKit] Added option to configure a custom watermark image.
+* [ImglyKit] Added `setProgress` and `show` (with `cancelHandler`) methods to `ProgressView` protocol, which can be implemented to support progress reporting and cancelation of long-running processes.
+* [VideoEditorSDK] Added progress percentage and ability to cancel video exports.
+
+### Fixed
+
+* [ImglyKit] Fixed icon image cache was not cleared when (re)assigning `IMGLY.bundleImageBlock` for icon customizations. 
+* [VideoEditorSDK] Fixed audio and video playback state responding to audio interruptions such as phone calls, Siri, keyboard dictation.
+
 ## [10.28.2]
 
 ### Changed
