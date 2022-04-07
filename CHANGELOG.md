@@ -1,3 +1,31 @@
+## [10.30.0]
+
+### Added
+
+* [ImglyKit] Added support for custom sticker selection views.
+* [ImglyKit] Added option to search and load stickers from external providers.
+* [VideoEditorSDK] Added serialization support for personal animated GIF stickers.
+* [VideoEditorSDK] Added a GIPHY sticker provider and predefined sticker category. Add the `GiphyStickerCategory` to your sticker categories to search for and use animated GIPHY stickers directly from the sticker tool.
+
+### Changed
+
+* [VideoEditorSDK] Improved support for viewing animated GIF stickers inside sticker categories.
+
+### Fixed
+
+* [ImglyKit] Fixed `CameraViewController` to use the asset catalog (for live filters) defined by the `Configuration` instead of always using `AssetCatalog.shared.effects`.
+* [ImglyKit] Fixed `CameraViewController` photo library permissions request that could fail on iOS 15.2+.
+* [ImglyKit] Fixed overlay artifacts for wide color and/or transparent images.
+* [ImglyKit] Fixed stickers larger than 4096^2 producing a black image background.
+* [ImglyKit] Fixed (silent) force crop mode did not consider rotatable crop aspect ratios to determine the best matching aspect.
+* [ImglyKit] Fixed (silent) force crop behaviour on images with aspect ratio similar to one of the defined ones in `TransformToolControllerOptions.allowedCropAspects`.
+* [ImglyKit] Fixed `OverlayToolControllerOptionsBuilder.allowedBlendModes` and `StickerOptionsToolControllerBuilder.allowedStickerActions` would not be accessible from Objective-C. 
+* [ImglyKit] Fixed `StickerToolController.menuViewController` would not scroll to previousily selected sticker category.
+* [ImglyKit] Fixed wide color values for sprites deserialized with P3 color space instead of extended sRGB.
+* [VideoEditorSDK] Fixed export progress percentage on trimmed videos.
+* [VideoEditorSDK] Fixed trim time calculation for videos with non-integer (drop-frame) frame rate.
+* [VideoEditorSDK] Fixed `TrimToolControllerOptionsBuilder.maximumDuration`, `TrimToolControllerOptionsBuilder.allowedTrimOverlayActions`, `AudioToolControllerOptionsBuilder.allowedAudioOverlayActions`, `CompositionToolControllerOptionsBuilder.allowedCompositionOverlayActions` would not be accessible from Objective-C. 
+
 ## [10.29.0]
 
 ### Added
