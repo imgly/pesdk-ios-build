@@ -1,3 +1,9 @@
+## [10.30.1]
+
+### Fixed
+
+* [ImglyKit] Fixed potential issues with App Store submission when integrating the SDK via CocoaPods.
+
 ## [10.30.0]
 
 ### Added
