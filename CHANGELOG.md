@@ -1,3 +1,52 @@
+## [11.0.0]
+
+Please see the [PE.SDK](https://img.ly/docs/pesdk/ios/introduction/migration/) or [VE.SDK](https://img.ly/docs/vesdk/ios/introduction/migration/) version 11 migration guide for details.
+
+### Added
+
+* [ImglyKit] Added font selection icon text to localization.
+* [PhotoEditorSDK] Added `PhotoEditorTask`, `PhotoEditorResult` and `PhotoEditorError` types.
+* [PhotoEditorSDK] Added optional `photoEditViewControllerShouldStart` method in `PhotoEditViewControllerDelegate` and SwiftUI `onShouldStart` modifier.
+* [VideoEditorSDK] Added `VideoEditorTask`, `VideoEditorResult` and `VideoEditorError` types.
+* [VideoEditorSDK] Added optional `videoEditViewControllerShouldStart` method in `VideoEditViewControllerDelegate` and SwiftUI `onShouldStart` modifier.
+
+### Deprecated
+
+* [ImglyKit] Deprecated `StickerCategory.all`, `Frame.all`, `Effect.all`, `Overlay.all`, `FontImporter.all`, `TextDesign.all`, `VideoClipCategory.all`, and `AudioClipCategory.all`. Add the assets directly to the `assetCatalog` of your `Configuration` object instead.
+* [PhotoEditorSDK] Deprecated `PhotoEditorResult.hasChanges` in favor of `.status`.
+* [VideoEditorSDK] Deprecated `VideoEditorResult.hasChanges` in favor of `.status`.
+
+### Changed
+
+* Built with Swift 5.6 / Xcode 13.3.1
+* Increased the deployment target to iOS 13.0.
+* [ImglyKit] Updated the brush tool to use Metal instead of OpenGL.
+* [ImglyKit] Moved `.willBecomeActiveTool`, `.didBecomeActiveTool`, `.willResignActiveTool`, and `.didResignActiveTool` from a public `UIViewController` extension to `ViewController`.
+* [ImglyKit] Moved public extensions of UIKit, Foundation and other iOS SDK classes to `.imgly` namespace for Swift and changed the prefix to `imgly_` for Obj-C to avoid collisions. Deprecated old extensions.
+* [ImglyKit] Renamed `IMGLY.Error` to `IMGLYError`.
+* [ImglyKit] Unified SwiftUI and UIKit result types.
+* [ImglyKit] SwiftUI `onDidSave` and `onDidFail` modifiers use new result and error types.
+* [PhotoEditorSDK] `PhotoEditViewControllerDelegate` uses new result and error types:
+	* `photoEditViewController(_ photoEditViewController: PhotoEditViewController, didSave image: UIImage, and data: Data)` is now `photoEditViewControllerDidFinish(_ photoEditViewController: PhotoEditViewController, result: PhotoEditorResult)`
+	* `photoEditViewControllerDidFailToGeneratePhoto(_ photoEditViewController: PhotoEditViewController)` is now `photoEditViewControllerDidFail(_ photoEditViewController: PhotoEditViewController, error: PhotoEditorError)`
+* [VideoEditorSDK] `VideoEditViewControllerDelegate` uses new result and error types:
+	* `videoEditViewController(_ videoEditViewController: VideoEditViewController, didFinishWithVideoAt url: URL?)` is now `videoEditViewControllerDidFinish(_ videoEditViewController: VideoEditViewController, result: VideoEditorResult)`
+	* `videoEditViewControllerDidFailToGenerateVideo(_ videoEditViewController: VideoEditViewController)` is now `videoEditViewControllerDidFail(_ videoEditViewController: VideoEditViewController, error: VideoEditorError)`
+
+## Fixed
+
+* [ImglyKit] Fixed a crash when opening the brush tool with the iOS Simulator on M1 Macs.
+
+### Removed
+
+* Removed all previously deprecated methods.
+* Removed any usage of OpenGL.
+* [ImglyKit] Removed `CameraViewController.dataCompletionBlock` and moved related logic to `CameraViewController.completionBlock`.
+* [ImglyKit] Removed `UIImage` parameter from `CameraViewController.completionBlock`.
+* [PhotoEditorSDK] Removed the use of `UIImage` in `PhotoEditViewControllerDelegate`, please use `data` and `UIImage(data:)` instead.
+* [PhotoEditorSDK] Removed the possibility to save an unedited image without rendering if the source `data` is unavailable.
+* [VideoEditorSDK] Removed legacy trim controls. Now, the overlay trim controls will be always used which was the default before. Deprecated `TrimToolOptions.useOverlayControls`, and `.controlsContainerView`, `.currentTimeLabel`, `.durationLabel`, `.playPauseButton` of the `TrimToolController`.
+
 ## [10.30.1]
 
 ### Fixed
