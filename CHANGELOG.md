@@ -1,3 +1,14 @@
+## [11.1.0]
+
+### Added
+
+* [ImglyKit] Added background removal option for personal and external non-animated stickers that depict people.
+* [PhotoEditorSDK] Added background removal option for photos that depict people.
+
+### Fixed
+
+* Fixed deprecation warnings for Swift tools version 5.6 when integrating the SDK via Swift Package Manager (SPM).
+
 ## [11.0.0]
 
 Please see the [PE.SDK](https://img.ly/docs/pesdk/ios/introduction/migration/) or [VE.SDK](https://img.ly/docs/vesdk/ios/introduction/migration/) version 11 migration guide for details.
@@ -33,7 +44,7 @@ Please see the [PE.SDK](https://img.ly/docs/pesdk/ios/introduction/migration/) o
 	* `videoEditViewController(_ videoEditViewController: VideoEditViewController, didFinishWithVideoAt url: URL?)` is now `videoEditViewControllerDidFinish(_ videoEditViewController: VideoEditViewController, result: VideoEditorResult)`
 	* `videoEditViewControllerDidFailToGenerateVideo(_ videoEditViewController: VideoEditViewController)` is now `videoEditViewControllerDidFail(_ videoEditViewController: VideoEditViewController, error: VideoEditorError)`
 
-## Fixed
+### Fixed
 
 * [ImglyKit] Fixed a crash when opening the brush tool with the iOS Simulator on M1 Macs.
 
