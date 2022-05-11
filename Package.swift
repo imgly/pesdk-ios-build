@@ -3,7 +3,10 @@ import PackageDescription
 
 let package = Package(
   name: "PhotoEditorSDK",
-  platforms: [.iOS(.v13)],
+  platforms: [
+    .iOS(.v13),
+    .macCatalyst(.v13),
+  ],
   products: [
     .library(name: "PhotoEditorSDK", targets: ["PhotoEditorSDK"]),
   ],
