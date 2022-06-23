@@ -1,13 +1,30 @@
+## [11.2.0]
+
+### Added
+
+* Added experimental Mac Catalyst support. (#1311)
+* [ImglyKit] Added handling of low-memory warnings to `AssetManager`. (#1335)
+* [PhotoEditorSDK] Added the possibility to populate `AssetManager` for headless photo rendering. (#946)
+
+### Fixed
+
+* [ImglyKit] Fixed smart sticker selection after scrolling. (#1372)
+* [ImglyKit] Fixed hiding personal sticker category for specific products in `StickerToolControllerOptionsBuilder.addedStickerClosure`. (#1363)
+* [ImglyKit] Fixed weather sticker deserialization when using a new asset catalog. (#946)
+* [ImglyKit] Fixed crash when using background removal with serialization. (#1315)
+* [ImglyKit] Fixed `FilterToolControllerOptionsBuilder.showFilterIntensitySlider` was not applied when opening the filter tool with an applied filter. (#1343)
+* [PhotoEditorSDK] Fixed UI showing wrong background removal button icon when using serialization. (#1315)
+
 ## [11.1.0]
 
 ### Added
 
-* [ImglyKit] Added background removal option for personal and external non-animated stickers that depict people.
-* [PhotoEditorSDK] Added background removal option for photos that depict people.
+* [ImglyKit] Added background removal option for personal and external non-animated stickers that depict people. (#1194)
+* [PhotoEditorSDK] Added background removal option for photos that depict people. (#1194)
 
 ### Fixed
 
-* Fixed deprecation warnings for Swift tools version 5.6 when integrating the SDK via Swift Package Manager (SPM).
+* Fixed deprecation warnings for Swift tools version 5.6 when integrating the SDK via Swift Package Manager (SPM). (#1293)
 
 ## [11.0.0]
 
