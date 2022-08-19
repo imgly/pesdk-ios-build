@@ -1,3 +1,21 @@
+## [11.3.0]
+
+### Added
+
+* [ImglyKit] Added all `OverlayButton`s to participate in custom class replacements. (#1471)
+* [VideoEditorSDK] Added `VideoSegment` API to `Video` for importing and exporting the complete video composition state including the individual clip trimming parameters. (#1411)
+* [VideoEditorSDK] Added `PhotoEditModel.compositionModel` to modify the video composition state while the editor is running. (#1411)
+* [VideoEditorSDK] Added duration action for text and stickers. (#1409)
+
+### Deprecated
+
+* [VideoEditorSDK] Deprecated `AVAsset` API for `Video` in favor of `VideoSegment` API. (#1411)
+
+### Fixed
+
+* [ImglyKit] Fixed crash when deserializing multiple instances of the same personal/external sticker. (#1466)
+* [ImglyKit] Fixed not requesting `PHPhotoLibrary` access when the camera roll button is not shown. (#1470)
+
 ## [11.2.0]
 
 ### Added
