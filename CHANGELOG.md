@@ -1,3 +1,9 @@
+## [11.3.1]
+
+### Fixed
+
+* [ImglyKit] Fixed overlay blend modes not working on iOS 16. (#1534)
+
 ## [11.3.0]
 
 ### Added
