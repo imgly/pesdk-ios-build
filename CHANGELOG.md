@@ -1,3 +1,9 @@
+## [11.3.2]
+
+### Fixed
+
+* [ImglyKit] Fixed App Store Connect private symbol warnings. (#1545)
+
 ## [11.3.1]
 
 ### Fixed
