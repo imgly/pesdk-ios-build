@@ -1,3 +1,13 @@
+## [11.3.3]
+
+### Added
+
+* [ImglyKit] Added `singleToolUse` mode that skips main menu if only one tool is used. (#1524)
+
+### Fixed
+
+* [ImglyKit] Fixed loading serializations produced on Android, when no text background color was provided. (#1554)
+
 ## [11.3.2]
 
 ### Fixed
