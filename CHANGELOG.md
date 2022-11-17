@@ -1,3 +1,11 @@
+## [11.3.4]
+
+### Fixed
+
+* [ImglyKit] Fixed sticker add button icon being replaced on SwiftUI. (#1587)
+* [ImglyKit] Fixed action buttons not showing when embedded into navigation controller. (#1614)
+* [VideoEditorSDK] Fixed stickers and text not showing in transform tool when using `Duration` action. (#1619)
+
 ## [11.3.3]
 
 ### Added
