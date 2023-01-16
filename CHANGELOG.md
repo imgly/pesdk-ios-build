@@ -1,3 +1,14 @@
+## [11.4.0]
+
+### Fixed
+
+* [ImglyKit] Fixed frames tool using abnormal amount of memory with bigger images. (#1655)
+* [VideoEditorSDK] Fixed audio slider not working on videos without sound. (#1654)
+
+### Added
+
+* [ImglyKit] Added `SmartSticker` API that allows custom sticker implementation. (#1641)
+
 ## [11.3.4]
 
 ### Fixed
