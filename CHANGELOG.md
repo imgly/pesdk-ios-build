@@ -1,3 +1,16 @@
+## [11.5.0]
+
+### Fixed
+
+* [ImglyKit] Fixed brush serialization made on Android rendered inverted. (#1657)
+* [VideoEditorSDK] Fixed audio serialization inconsistencies between Android and iOS. (#1661)
+
+### Added
+
+* [VideoEditorSDK] Added support for custom audio selection views. (#1661)
+* [VideoEditorSDK] Added option to search and load audio clips from external providers. (#1661)
+* [VideoEditorSDK] Added a Soundstripe audio provider and predefined audio clip category. Add the `SoundstripeAudioClipCategory` to your audio categories to search for and use Soundstripe audio clips directly from the audio tool. (#1661)
+
 ## [11.4.0]
 
 ### Fixed
