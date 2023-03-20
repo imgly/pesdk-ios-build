@@ -1,3 +1,14 @@
+## [11.5.1]
+
+### Fixed
+
+* [ImglyKit] Fixed serialization created from videos, sometimes not working on photos. (#1658)
+* [ImglyKit] Fixed camera continuously reporting runtime error when on call. (#1693)
+* [ImglyKit] Fixed brush being rendered at the incorrect spot when using rotation on transform tool. (#1668)
+* [ImglyKit] Fixed missing Obj-C compatibility for `StickerProvider`. (#1665)
+* [PhotoEditorSDK] Fixed exported images being upside down when taken in mirrored mode from native camera. (#1659)
+* [VideoEditorSDK] Fixed audio clips from the asset catalog not playing. (#1697)
+
 ## [11.5.0]
 
 ### Fixed
