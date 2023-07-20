@@ -1,4 +1,31 @@
+## [11.6.0]
+
+### Added
+
+* [ImglyKit] Added `StickerCollectionDelegate.stickerCollection(_ stickerCollection:, didSelect:, metadata:)`, so `StickerCollectionDelegate` now supports passing metadata to sticker placed by from a custom `StickerCollection`. (#1708)
+* [ImglyKit] Added `AdjustToolControllerOptions.limitConfigurationClosure` that allows configuration of adjustment tool slider minimum and maximum values. (#1739)
+* [ImglyKit] Added `PhotoEditViewControllerOptions.outputScaling` and `VideoEditViewControllerOptions.outputScaling` options, that ensure that output dimensions exactly match the selected aspect ratio. (#1359)
+* [VideoEditorSDK] Added `VideoEditViewControllerOptions.showTimelineOnMainScreen` flag, that enables video timeline view on the main screen of the editor. (#1719)
+* [VideoEditorSDK] Added `VideoClipToolControllerOptions.videoClipAddButtonSelectedClosure` that is invoked when new video is added to the composition. (#1720)
+* [VideoEditorSDK] Added duration option for text designs. (#1695)
+* [VideoEditorSDK] Added `.composition` and `.audio` screens to analytics. (#1781)
+
+### Changed
+
+* [ImglyKit] Changed behavior of the text design tool to have a dedicated color and layout option. The old behavior can be restored by using the `ToolMenuItem.createLegacyTextDesignToolItem()` item. (#1695)
+
+### Fixed
+
+* [ImglyKit] Fixed access level of `OverlayEditController.init(sliderEditController:)` to `public` so that `OverlayEditController` can be subclassed. (#1757)
+* [ImglyKit] Fixed showing filters when using `CameraViewControllerOptions.showFilters`. (#1781)
+* [VideoEditorSDK] Fixed `VideoEditorResult.hasChanges` would be `false` for muted videos. (#1735)
+
 ## [11.5.1]
+
+### Added
+
+* [ImglyKit] Added `Theme.uppercasedToolbarTitles` that controls capitalization of titles in the editor's toolbar.
+* [ImglyKit] Added support to exchange the `UIFont` used in the SDK via the `Theme`. To use this feature, assign custom fonts to `Theme.primaryFont`, `Theme.mediumFont`, `Theme.boldFont`, `Theme.monospacedFont` and `Theme.searchBarFont`.
 
 ### Fixed
 
