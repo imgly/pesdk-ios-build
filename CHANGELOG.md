@@ -1,3 +1,14 @@
+## [11.7.0]
+
+### Changed
+
+* Built with Swift 5.8 / Xcode 14.3.1
+* [ImglyKit] Replaced font 'Galano' with font 'Lexend Bold', 'Campton' with 'Outfit Bold', 'Wolesbro' with 'Cookie', and 'Amberlight' with 'Allison'. (#1790)
+
+### Fixed
+
+* [ImglyKit] Implemented thread-safety in `AssetManager` to increase robustness against concurrent access in environments with multi-threaded contexts. (#1807)
+
 ## [11.6.0]
 
 ### Added
