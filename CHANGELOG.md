@@ -1,3 +1,9 @@
+## [11.8.0]
+
+### Added
+
+* Added support for Expo 49. (#1811)
+
 ## [11.7.0]
 
 ### Changed
