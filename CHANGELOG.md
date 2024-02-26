@@ -1,3 +1,9 @@
+## [11.8.1]
+
+### Fixed
+
+* [VideoEditorSDK] Fixed HDR videos having overly exposed brightness. (#1830)
+
 ## [11.8.0]
 
 ### Added
