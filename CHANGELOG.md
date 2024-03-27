@@ -1,3 +1,15 @@
+## [11.9.0]
+
+### Added
+
+* [ImglyKit] Added `StickerSelectionController.batchSize` to adjust the batch size for loading and prefetching stickers. (#1789)
+* [VideoEditorSDK] Added `AudioClipSelectionController.batchSize` to adjust the batch size for loading and prefetching audio clips. (#1838)
+
+### Fixed
+
+* [ImglyKit] Fixed issue where stickers would not be loaded for the GIPHY sticker category on iPad. (#1789)
+* [ImglyKit] Fixed potential compiling issue with React Native. (#1854)
+
 ## [11.8.1]
 
 ### Fixed
