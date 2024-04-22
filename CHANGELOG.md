@@ -1,3 +1,9 @@
+## [11.10.0]
+
+### Added
+
+* Added `PrivacyInfo.xcprivacy` containing information on the data collected by the SDKs. (#1868)
+
 ## [11.9.0]
 
 ### Added
