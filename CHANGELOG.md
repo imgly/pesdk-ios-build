@@ -1,3 +1,9 @@
+## [11.10.1]
+
+### Fixed
+
+* Fixed issue where the video could not be exported in case the `trimModel.endTime` of a loaded serialization is longer than the video's duration. (#1873)
+
 ## [11.10.0]
 
 ### Added
