@@ -1,3 +1,9 @@
+## [11.10.2]
+
+### Fixed
+
+* Fixed Xcode 16 submissions failed due to bitcode contained in the frameworks. (#1902)
+
 ## [11.10.1]
 
 ### Fixed
