@@ -1,3 +1,13 @@
+## [11.10.3]
+
+## Changed 
+
+* Built with Swift 6.1.2 / Xcode 16.4
+
+### Fixed
+
+* [ImglyKit] Fixed Transform tool preview becoming hazy after rotating images by 90°/270°.
+
 ## [11.10.2]
 
 ### Fixed
