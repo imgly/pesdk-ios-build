@@ -1,4 +1,4 @@
-## [UNRELEASED]
+## [11.10.5]
 
 ### Fixed
 * [ImglyKit] Fixed a remaining Transform preview haze case by forcing redraw after each Metal preview layout update and by always executing rotation snapshot cleanup callbacks.
