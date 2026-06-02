@@ -1,3 +1,15 @@
+## [UNRELEASED]
+
+### Fixed
+* [ImglyKit] Fixed a remaining Transform preview haze case by forcing redraw after each Metal preview layout update and by always executing rotation snapshot cleanup callbacks.
+* [ImglyKit] Removed an unused SHA-1 license verification code path to avoid insecure cryptography scan findings in the iOS framework binary.
+
+## [11.10.4]
+
+## Fixed 
+* Fixed Transform tool becoming hazy in additional edge cases
+
+
 ## [11.10.3]
 
 ## Changed 
