@@ -1,30 +1,48 @@
+## [Unreleased]
+
+
+## [11.10.6]
+
+### Fixed
+* [VideoEditorSDK] Fixed video export cancellation hanging while tracks load or the media writer is not ready.
+* [ImglyKit] Included the SDK privacy manifest in PE.SDK and VE.SDK CocoaPods source distributions, including the development source pod.
+* [ImglyKit] Fixed the Transform tool's angle picker gradient not updating after switching between light and dark mode while the editor is open.
+* [VideoEditorSDK] Fixed handling of spatial-audio recordings by preferring a conventional companion audio track over APAC.
+* [ImglyKit] Fixed a remaining rotation snapshot cleanup case that could leave the Transform preview dim after 90°/270° rotations.
+* [ImglyKit] Restored navigation bar state after canceling an interactive swipe-back in the editor in the maintenance release line.
+
+
 ## [11.10.5]
 
 ### Fixed
 * [ImglyKit] Fixed a remaining Transform preview haze case by forcing redraw after each Metal preview layout update and by always executing rotation snapshot cleanup callbacks.
 * [ImglyKit] Removed an unused SHA-1 license verification code path to avoid insecure cryptography scan findings in the iOS framework binary.
 
+
+
 ## [11.10.4]
 
-## Fixed 
-* Fixed Transform tool becoming hazy in additional edge cases
+### Fixed
 
+* Fixed Transform tool becoming hazy in additional edge cases.
 
 ## [11.10.3]
 
 ## Changed 
-
 * Built with Swift 6.1.2 / Xcode 16.4
 
 ### Fixed
 
 * [ImglyKit] Fixed Transform tool preview becoming hazy after rotating images by 90°/270°.
+* [ImglyKit] Fixed navigation bar state after canceling an interactive swipe-back in the editor.
 
 ## [11.10.2]
 
 ### Fixed
 
 * Fixed Xcode 16 submissions failed due to bitcode contained in the frameworks. (#1902)
+
+
 
 ## [11.10.1]
 
